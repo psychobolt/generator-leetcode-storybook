@@ -1,2 +1,7 @@
-# leetcode-storybook-generator
-Coming Soon! A Yeoman Generator that scafolds boilerplate code for your stories.
+# Generator Leetcode Storybook
+
+Coming Soon! A Yeoman Generator that scafolds LeetCode problem templates into your Storybook.
+
+## Development Guide
+
+Please see [DEVELOPMENT.md](DEVELOPMENT.md)
