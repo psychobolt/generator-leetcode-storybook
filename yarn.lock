@@ -4932,9 +4932,9 @@ __metadata:
     rimraf: 3.0.2
     slash: 4.0.0
     symlink-dir: 5.0.1
-    vsc-leetcode-cli: ^2.8.0
+    vsc-leetcode-cli: 2.8.0
     yeoman-environment: 3.9.1
-    yeoman-generator: ^5.6.1
+    yeoman-generator: 5.6.1
     yeoman-test: 6.3.0
     yo: 4.3.0
   languageName: unknown
@@ -11549,7 +11549,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vsc-leetcode-cli@npm:^2.8.0":
+"vsc-leetcode-cli@npm:2.8.0":
   version: 2.8.0
   resolution: "vsc-leetcode-cli@npm:2.8.0"
   dependencies:
@@ -12117,7 +12117,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-generator@npm:^5.6.1":
+"yeoman-generator@npm:5.6.1":
   version: 5.6.1
   resolution: "yeoman-generator@npm:5.6.1"
   dependencies:
