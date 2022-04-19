@@ -4905,9 +4905,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"generator-example-generator@workspace:.":
+"generator-leetcode-storybook@workspace:.":
   version: 0.0.0-use.local
-  resolution: "generator-example-generator@workspace:."
+  resolution: "generator-leetcode-storybook@workspace:."
   dependencies:
     "@babel/core": 7.17.9
     "@babel/eslint-parser": 7.17.0

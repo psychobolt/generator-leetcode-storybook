@@ -1,20 +1,14 @@
+import { createRequire } from 'module';
 import Generator from 'yeoman-generator';
 
-export default class Main extends Generator {
-  async prompting() {
-    this.answers = await this.prompt([{
-      type: 'input',
-      name: 'filepath',
-      message: 'Enter a filepath: ',
-      default: 'public/index.html',
-    }]);
-  }
+import Problem from '../Problem/index.js';
 
-  writing() {
-    this.fs.copyTpl(
-      this.templatePath('index.html'),
-      this.destinationPath(this.answers.filepath),
-      { title: 'Templating with Yeoman' },
-    );
+const require = createRequire(import.meta.url);
+export default class Main extends Generator {
+  initializing() {
+    this.composeWith({
+      Generator: Problem,
+      path: require.resolve('../Problem/index.js'),
+    });
   }
 }

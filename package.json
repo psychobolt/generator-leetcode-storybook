@@ -1,7 +1,7 @@
 {
-  "name": "generator-example-generator",
+  "name": "generator-leetcode-storybook",
   "version": "0.0.1",
-  "description": "Example Yeoman generator",
+  "description": "A Yeoman Generator that scafolds LeetCode problem templates into your Storybook",
   "type": "module",
   "main": "src/app/index.js",
   "repository": "https://github.com/psychobolt/yeoman-generator-boilerplate",
