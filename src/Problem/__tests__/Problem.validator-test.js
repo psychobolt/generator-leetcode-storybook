@@ -19,6 +19,6 @@ describe('Validate Problem ID', () => {
     const validateId = validator.id.bind({
       async: () => message => expect(message).toBe('Invalid Problem ID'),
     });
-    validateId(1010101010101);
+    validateId(9999);
   });
 });
