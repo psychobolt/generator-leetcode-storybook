@@ -35,8 +35,8 @@ jobs:
           echo ${{ secrets.LEETCODE_USER }} >> account.txt
           echo ${{ secrets.LEETCODE_TOKEN }} >> account.txt
         shell: bash
-      - run: cat account.txt | yarn leetcode user -g
-        shell: bash
+      - run: yarn leetcode user -g < ./account.txt
+        shell: 'script -q -e -c "bash {0}"'
       - run: yarn leetcode session
         shell: bash
       - run: NODE_ENV=test yarn c8 yarn test
