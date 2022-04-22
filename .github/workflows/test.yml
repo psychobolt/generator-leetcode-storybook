@@ -35,7 +35,7 @@ jobs:
           echo "${{ secrets.LEETCODE_USER }}" >> account.txt
           echo "${{ secrets.LEETCODE_TOKEN }}" >> account.txt
         shell: bash
-      - run: yarn leetcode user -g < account.txt
+      - run: yarn leetcode user -g -vv < account.txt
         shell: bash
       - run: yarn leetcode session
         shell: bash
