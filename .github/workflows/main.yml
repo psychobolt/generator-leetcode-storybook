@@ -5,3 +5,6 @@ on:
 jobs:
   test:
     uses: ./.github/workflows/test.yml
+    secrets:
+      LEETCODE_USER: ${{ secrets.LEETCODE_USER }}
+      LEETCODE_TOKEN: ${{ secrets.LEETCODE_TOKEN }}

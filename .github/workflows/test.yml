@@ -1,5 +1,11 @@
 on:
   workflow_call:
+    secrets:
+      LEETCODE_USER:
+        required: true
+      LEETCODE_TOKEN:
+        required: true
+
 
 jobs:
   lint:
@@ -23,6 +29,13 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
       - run: yarn install
+        shell: bash
+      - run: |
+          touch account.txt
+          echo ${{ secrets.LEETCODE_USER }} >> account.txt
+          echo ${{ secrets.LEETCODE_TOKEN }} >> account.txt
+        shell: bash
+      - run: yarn leetcode user -g < account.txt
         shell: bash
       - run: NODE_ENV=test yarn c8 yarn test
         shell: bash
