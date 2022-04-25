@@ -21,6 +21,10 @@
     "yeoman-generator"
   ],
   "dependencies": {
+    "espree": "9.3.1",
+    "execa": "6.1.0",
+    "json5": "2.2.1",
+    "slash": "4.0.0",
     "vsc-leetcode-cli": "2.8.0",
     "yeoman-generator": "5.6.1"
   },
@@ -38,7 +42,6 @@
     "eslint-plugin-flowtype": "8.0.3",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jest": "26.1.5",
-    "execa": "6.1.0",
     "flow-bin": "0.175.1",
     "flow-typed": "3.7.0",
     "isbinaryfile": "5.0.0",
@@ -46,7 +49,6 @@
     "jest-cli": "27.5.1",
     "jest-light-runner": "0.1.1",
     "rimraf": "3.0.2",
-    "slash": "4.0.0",
     "symlink-dir": "5.0.1",
     "yeoman-environment": "3.9.1",
     "yeoman-test": "6.3.0",

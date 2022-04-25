@@ -6,6 +6,7 @@ export default {
   testPathIgnorePatterns: [
     '/node_modules/',
     '/packages/',
+    '/templates/',
   ],
   collectCoverageFrom: ['src/**/*.js'],
 };

@@ -18,6 +18,16 @@
     "no-bitwise": ["error", { "int32Hint": true }],
     "no-mixed-operators": 0
   },
+  "overrides": [
+    {
+      "files": ["*.es3.cjs"],
+      "rules": {
+        "func-names": ["error", "as-needed"],
+        "no-param-reassign": 0,
+        "no-var": 0
+      }
+    }
+  ],
   "env": {
     "jest/globals": true
   }

@@ -3,5 +3,6 @@
 **/dist
 /shared/flow-typed/npm
 /src/**/templates
+/tmp
 .pnp.cjs
 .pnp.loader.mjs

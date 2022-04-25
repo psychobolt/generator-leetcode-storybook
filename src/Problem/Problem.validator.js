@@ -1,17 +1,26 @@
-import spawn from 'cross-spawn';
+import { execaSync } from 'execa';
 
-export function id(input) {
-  const done = this.async();
+let spawnSync = execaSync;
 
-  if (typeof input === 'number') {
-    const result = spawn.sync('leetcode', ['show', input], { encoding: 'utf-8' });
-    if (result.output.find(output => output && output.indexOf('Problem not found!') > -1)) {
-      done('Invalid Problem ID');
-    } else {
-      done(null, true);
+export default {
+  // TODO remove when es6 module mocking is supported
+  setSpawnSync(spawn) {
+    spawnSync = spawn;
+  },
+
+  id(input) {
+    const done = this.async();
+
+    if (typeof input === 'number') {
+      const result = spawnSync('leetcode', ['show', input]);
+      if (result.stdout.indexOf('Problem not found!') > -1) {
+        done('Invalid Problem ID');
+      } else {
+        done(null, true);
+      }
+      return;
     }
-    return;
-  }
 
-  done('Invalid input');
-}
+    done('Invalid input');
+  },
+};
