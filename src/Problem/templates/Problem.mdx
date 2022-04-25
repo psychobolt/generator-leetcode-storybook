@@ -1,26 +1,7 @@
 import { Meta } from '@storybook/addon-docs';
 
-<!-- See https://github.com/LeetCode-OpenSource/vscode-leetcode/blob/de1dc4161b497b4f76faad2363abab0104a75373/src/webview/leetCodePreviewProvider.ts#L48 -->
-<Meta title="<%= path %>" />
+import Problem from '<%= problemPath %>';
 
-# [<%= title %>](<%= url %>)
+<Meta title="<%= titlePath %>/Problem" />
 
-| Category | Difficulty | Likes | Dislikes |
-| :------: | :--------: | :---: | :------: |
-| <%= category %> | <%= difficulty %> | <%= likes %> | <%= dislikes %> |
-
-<details>
-  <summary><strong>Tags</strong></summary>
-
-  <%= tags.map(tag => `[${tag}](https://leetcode.com/tag/${tag})`).join(' | ') %>
-
-</details>
-
-<details>
-  <summary><strong>Companies</strong></summary>
-
-  <%= companies.map(company => `[${company}](https://leetcode.com/tag/${company})`).join(' | ') %>
-  
-</details>
-
-<%- body %>
+<Problem />

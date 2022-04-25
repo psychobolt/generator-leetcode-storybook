@@ -1,7 +1,7 @@
-import solution from './<%= name %>.es3.cjs';
+import solution from '<%= solutionPath %>';
 import runTestCase, { cases } from './testCases.js';
 
 test.each(cases.map(c => [c.name, c]))(
-  '[<%= path %>] - Case %#',
+  '[<%= titlePath %>] - Case %#',
   (name, testCase) => expect(runTestCase(solution, testCase)).toEqual(testCase.expected),
 );

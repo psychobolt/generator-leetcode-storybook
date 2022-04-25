@@ -1,0 +1,27 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+import solution from '<%= solutionPath %>';
+import code from '<%= solutionPath %>?raw';
+import runTestCase, { cases } from './testCases.js';
+
+export const c0 = cases[0];
+
+<Meta title="<%= titlePath %>/Solution" />
+
+# Solution
+
+Modify the solution file `<%= solutionPath %>` to test results.
+
+## Default Case
+
+<Canvas>
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
+    <div>
+      <span>Input: </span>
+      <span>{JSON.stringify(c0.input)}</span>
+    </div>
+    <div>
+      <span>Output: </span>
+      <span>{JSON.stringify(runTestCase(solution, c0))}</span>
+    </div>
+  </Story>
+</Canvas>

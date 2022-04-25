@@ -12,9 +12,11 @@ export default {
     const done = this.async();
 
     if (typeof input === 'number') {
-      const result = spawnSync('leetcode', ['show', input]);
-      if (result.stdout.indexOf('Problem not found!') > -1) {
+      const { stdout } = spawnSync('leetcode', ['show', input]);
+      if (stdout.indexOf('Problem not found!') > -1) {
         done('Invalid Problem ID');
+      } else if (stdout.indexOf('[code=-1]') > -1) {
+        done('Please login using leetcode-cli');
       } else {
         done(null, true);
       }

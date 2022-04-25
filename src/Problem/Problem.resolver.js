@@ -7,7 +7,7 @@ import * as espree from 'espree';
 
 let spawnSync = execaSync;
 
-const dirname = path.dirname(fileURLToPath(import.meta.url));
+const dirname = path.dirname(fileURLToPath(import/*:: ("") */.meta.url));
 const readJSON = filepath => JSON5.parse(fs.readFileSync(path.resolve(dirname, filepath), { encoding: 'utf-8' }));
 
 const COMPANIES = readJSON('./companies.json5');
@@ -72,10 +72,13 @@ export default {
   code(id) {
     let { stdout } = spawnSync('leetcode', ['show', '-c', id, '-l', 'javascript']);
     const ast = espree.parse(stdout);
-    const solutionAlias = ast.body[0].declarations[0].id.name;
+    const alias = ast.body[0].declarations[0].id.name;
     stdout = stdout.split('\n').map(line => line
       .replace(/\r/, '')
       .replace(/^\s+$/, ''));
-    return `${stdout.join('\n')}\nmodule.export = ${solutionAlias};`;
+    return {
+      alias,
+      source: `${stdout.join('\n')}\nmodule.exports = ${alias};`,
+    };
   },
 };

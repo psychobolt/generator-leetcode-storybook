@@ -8,7 +8,7 @@ import resolver from '../../Problem/Problem.resolver.js';
 const tmpDir = path.resolve('tmp');
 const generator = path.resolve('src', 'app', 'index.js');
 
-const dirname = path.dirname(fileURLToPath(import.meta.url));
+const dirname = path.dirname(fileURLToPath(import/*:: ("") */.meta.url));
 const readFile = filepath => fs.readFileSync(path.resolve(dirname, filepath), { encoding: 'utf-8' });
 
 describe(`Main Generator ${(generator)} runs correctly in ${tmpDir}`, () => {
@@ -38,7 +38,7 @@ describe(`Main Generator ${(generator)} runs correctly in ${tmpDir}`, () => {
   it('with prompts', async () => {
     await helpers.create(generator)
       .inDir(tmpDir)
-      .withPrompts({ id: 1, pathInput: 'Array', generateTestCases: false })
+      .withPrompts({ id: 1, pathInput: 'Array' })
       .build()
       .run();
   });

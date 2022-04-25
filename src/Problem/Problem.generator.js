@@ -17,54 +17,67 @@ export default class Problem extends Generator {
     }, {
       type: 'input',
       name: 'pathInput',
-      message: 'Enter a path you want to create this problem in (e.g. Array/1D)',
-    }, {
-      type: 'confirm',
-      name: 'generateTestCases',
-      message: 'Do you wish to generate a unit test stub?',
-      default: true,
+      message: 'Enter a path you want to create this problem in (e.g. DataStructure/Array)',
     }]);
   }
 
   writing() {
-    const { id, pathInput = '', generateTestCases } = this.answers;
+    const { id, pathInput = '' } = this.answers;
     const pathParts = getPathParts(pathInput);
-    let problem = resolver.problem(id);
-    problem = {
-      ...problem,
-      path: [...pathParts, problem.title].join('/'),
-      ...resolver.metadata(id, problem.title),
-    };
-    const name = problem.title.replace(' ', '');
-    const camelName = name.charAt(0).toLowerCase() + name.slice(1);
-    const destinationPath = path.join(...[this.destinationRoot(), ...pathParts]);
+    const problem = resolver.problem(id);
+    const { alias, source } = resolver.code(id);
+    const name = alias.charAt(0).toUpperCase() + alias.slice(1);
+    const titlePath = [...pathParts.map(pathPart => pathPart.replace(/([A-Z]+)*([A-Z][a-z])/g, '$1 $2').trim()), problem.title].join('/');
+    const relativePath = `./${path.join(...pathParts, name)}`;
+    const destinationPath = path.join(this.destinationRoot(), relativePath);
+    const problemPath = `./${name}.md`;
+    const solutionPath = `./${alias}.es3.cjs`;
+
+    // See https://github.com/LeetCode-OpenSource/vscode-leetcode/blob/de1dc4161b497b4f76faad2363abab0104a75373/src/webview/leetCodePreviewProvider.ts#L48
+    this.fs.copyTpl(
+      this.templatePath('Problem.md'),
+      this.destinationPath(path.join(destinationPath, `${name}.md`)),
+      {
+        ...problem,
+        ...resolver.metadata(id, problem.title),
+      },
+    );
 
     this.fs.copyTpl(
       this.templatePath('Problem.mdx'),
-      this.destinationPath(path.join(destinationPath, `${name}.stories.mdx`)),
-      problem,
+      this.destinationPath(path.join(destinationPath, `${name}.problem.mdx`)),
+      {
+        titlePath,
+        problemPath,
+      },
     );
 
-    const code = resolver.code(id);
+    this.fs.copyTpl(
+      this.templatePath('Solution.mdx'),
+      this.destinationPath(path.join(destinationPath, `${name}.solution.mdx`)),
+      {
+        titlePath,
+        solutionPath,
+      },
+    );
+
     this.fs.copyTpl(
       this.templatePath('solution.js.ejs'),
-      this.destinationPath(path.join(destinationPath, `${camelName}.es3.cjs`)),
-      { code },
+      this.destinationPath(path.join(this.destinationRoot(), relativePath, solutionPath)),
+      { source },
     );
 
-    if (generateTestCases) {
-      this.fs.copy(
-        this.templatePath('testCases.js'),
-        this.destinationPath(path.join(destinationPath, 'testCases.js')),
-      );
-      this.fs.copyTpl(
-        this.templatePath('problem.test.js'),
-        this.destinationPath(path.join(destinationPath, `${camelName}.test.js`)),
-        {
-          name: camelName,
-          path: problem.path,
-        },
-      );
-    }
+    this.fs.copy(
+      this.templatePath('testCases.js'),
+      this.destinationPath(path.join(destinationPath, 'testCases.js')),
+    );
+    this.fs.copyTpl(
+      this.templatePath('problem.test.js'),
+      this.destinationPath(path.join(destinationPath, `${alias}.test.js`)),
+      {
+        solutionPath,
+        titlePath,
+      },
+    );
   }
 }
