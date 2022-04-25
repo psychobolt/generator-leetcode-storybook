@@ -53,7 +53,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["isbinaryfile", "npm:5.0.0"],\
             ["jest", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:27.5.1"],\
             ["jest-cli", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:27.5.1"],\
-            ["jest-light-runner", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:0.1.1"],\
+            ["jest-light-runner", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:0.1.3"],\
             ["json5", "npm:2.2.1"],\
             ["rimraf", "npm:3.0.2"],\
             ["slash", "npm:4.0.0"],\
@@ -6110,7 +6110,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["isbinaryfile", "npm:5.0.0"],\
             ["jest", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:27.5.1"],\
             ["jest-cli", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:27.5.1"],\
-            ["jest-light-runner", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:0.1.1"],\
+            ["jest-light-runner", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:0.1.3"],\
             ["json5", "npm:2.2.1"],\
             ["rimraf", "npm:3.0.2"],\
             ["slash", "npm:4.0.0"],\
@@ -8036,17 +8036,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["jest-light-runner", [\
-        ["npm:0.1.1", {\
-          "packageLocation": "./.yarn/cache/jest-light-runner-npm-0.1.1-d945aa8748-9f6a99af50.zip/node_modules/jest-light-runner/",\
+        ["npm:0.1.3", {\
+          "packageLocation": "./.yarn/cache/jest-light-runner-npm-0.1.3-03ed4f3ea8-63436c7d2f.zip/node_modules/jest-light-runner/",\
           "packageDependencies": [\
-            ["jest-light-runner", "npm:0.1.1"]\
+            ["jest-light-runner", "npm:0.1.3"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:0.1.1", {\
-          "packageLocation": "./.yarn/__virtual__/jest-light-runner-virtual-21634154c1/0/cache/jest-light-runner-npm-0.1.1-d945aa8748-9f6a99af50.zip/node_modules/jest-light-runner/",\
+        ["virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:0.1.3", {\
+          "packageLocation": "./.yarn/__virtual__/jest-light-runner-virtual-75287fbb84/0/cache/jest-light-runner-npm-0.1.3-03ed4f3ea8-63436c7d2f.zip/node_modules/jest-light-runner/",\
           "packageDependencies": [\
-            ["jest-light-runner", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:0.1.1"],\
+            ["jest-light-runner", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:0.1.3"],\
             ["@types/jest", null],\
             ["expect", "npm:27.5.1"],\
             ["jest", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:27.5.1"],\
