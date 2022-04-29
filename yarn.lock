@@ -2062,7 +2062,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdx-js/react@npm:^1.6.22":
+"@mdx-js/react@npm:1.6.22, @mdx-js/react@npm:^1.6.22":
   version: 1.6.22
   resolution: "@mdx-js/react@npm:1.6.22"
   peerDependencies:
@@ -5813,7 +5813,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-loader@npm:^8.0.0, babel-loader@npm:^8.2.5":
+"babel-loader@npm:8.2.5, babel-loader@npm:^8.0.0":
   version: 8.2.5
   resolution: "babel-loader@npm:8.2.5"
   dependencies:
@@ -10224,7 +10224,7 @@ __metadata:
     "@babel/plugin-transform-shorthand-properties": 7.16.7
     "@babel/plugin-transform-spread": 7.16.7
     "@babel/preset-env": 7.16.11
-    "@mdx-js/react": ^1.6.22
+    "@mdx-js/react": 1.6.22
     "@storybook/addon-actions": 6.5.0-alpha.62
     "@storybook/addon-docs": 6.5.0-alpha.62
     "@storybook/addon-essentials": 6.5.0-alpha.62
@@ -10239,7 +10239,7 @@ __metadata:
     "@yarnpkg/core": 3.2.0
     "@yarnpkg/sdks": 3.0.0-rc.3
     app-root-path: 3.0.0
-    babel-loader: ^8.2.5
+    babel-loader: 8.2.5
     babel-plugin-macros: 3.1.0
     babel-plugin-named-exports-order: 0.0.2
     babel-plugin-polyfill-corejs3: 0.5.2
