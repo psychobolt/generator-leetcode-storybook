@@ -53,10 +53,13 @@ jobs:
   chromatic:
     name: "Run Visual Tests"
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
+      - run: yarn install
+        shell: bash
       - run: mkdir tmp
         shell: bash
       - run: yarn yo ../ --projectId 1 --path Array
