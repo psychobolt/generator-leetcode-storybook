@@ -7,6 +7,7 @@ export default {
     '/node_modules/',
     '/packages/',
     '/templates/',
+    '/tmp/',
   ],
   collectCoverageFrom: ['src/**/*.js'],
 };

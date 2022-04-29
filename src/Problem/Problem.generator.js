@@ -8,21 +8,29 @@ import validator from './Problem.validator.js';
 const getPathParts = pathInput => (pathInput ? slash(pathInput.trim()).split('/') : []);
 
 export default class Problem extends Generator {
+  constructor(args, opts) {
+    super(args, opts);
+    this.option('problemId', { type: Number, default: opts.problemId });
+    this.option('path', { type: String, default: opts.path });
+  }
+
   async prompting() {
     this.answers = await this.prompt([{
       type: 'number',
       name: 'id',
       message: 'Enter the problem ID',
       validate: validator.id,
+      when: !this.options.problemId,
     }, {
       type: 'input',
       name: 'pathInput',
       message: 'Enter a path you want to create this problem in (e.g. DataStructure/Array)',
+      when: !this.options.path,
     }]);
   }
 
   writing() {
-    const { id, pathInput = '' } = this.answers;
+    const { id = this.options.problemId, pathInput = this.options.path || '' } = this.answers;
     const pathParts = getPathParts(pathInput);
     const problem = resolver.problem(id);
     const { alias, source } = resolver.code(id);

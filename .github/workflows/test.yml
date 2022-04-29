@@ -5,7 +5,8 @@ on:
         required: true
       LEETCODE_TOKEN:
         required: true
-
+      CHROMATIC_PROJECT_TOKEN:
+        required: true
 
 jobs:
   lint:
@@ -49,3 +50,18 @@ jobs:
         with:
           name: coverage_${{ github.sha }}
       - uses: codecov/codecov-action@v3
+  chromatic:
+    name: "Run Visual Tests"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - run: mkdir tmp
+        shell: bash
+      - run: yarn yo ../ --projectId 1 --path Array
+        shell: bash
+        working-directory: tmp
+      - uses: chromaui/action@v1
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}

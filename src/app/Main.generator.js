@@ -9,6 +9,6 @@ export default class Main extends Generator {
     this.composeWith({
       Generator: Problem,
       path: require.resolve('../Problem/index.js'),
-    });
+    }, this.options);
   }
 }
