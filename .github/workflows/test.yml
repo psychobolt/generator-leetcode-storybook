@@ -62,7 +62,7 @@ jobs:
         shell: bash
       - run: mkdir tmp
         shell: bash
-      - run: yarn yo ../ --projectId 1 --path Array
+      - run: yarn yo ../ --problemId 1 --path Array
         shell: bash
         working-directory: tmp
       - uses: chromaui/action@v1
