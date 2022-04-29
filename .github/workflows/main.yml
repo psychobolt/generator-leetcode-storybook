@@ -8,3 +8,4 @@ jobs:
     secrets:
       LEETCODE_USER: ${{ secrets.LEETCODE_USER }}
       LEETCODE_TOKEN: ${{ secrets.LEETCODE_TOKEN }}
+      CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
