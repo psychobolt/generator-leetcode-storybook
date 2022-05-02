@@ -1,17 +1,28 @@
+import fs from 'fs';
 import path from 'path';
 import slash from 'slash';
 import Generator from 'yeoman-generator';
 
+import { setCache } from './Problem.actions.js';
 import resolver from './Problem.resolver.js';
 import validator from './Problem.validator.js';
+
+const readFile = filepath => fs.readFileSync(filepath, { encoding: 'utf-8' });
 
 const getPathParts = pathInput => (pathInput ? slash(pathInput.trim()).split('/') : []);
 
 export default class Problem extends Generator {
   constructor(args, opts) {
     super(args, opts);
+    this.option('cache', { type: String, default: opts.cache });
     this.option('problemId', { type: Number, default: opts.problemId });
     this.option('path', { type: String, default: opts.path });
+  }
+
+  initializing() {
+    if (this.options.cache) {
+      setCache([JSON.parse(readFile(this.options.cache))]);
+    }
   }
 
   async prompting() {
@@ -20,7 +31,7 @@ export default class Problem extends Generator {
       name: 'id',
       message: 'Enter the problem ID',
       validate: validator.id,
-      when: !this.options.problemId,
+      when: !this.options.cache || !this.options.problemId,
     }, {
       type: 'input',
       name: 'pathInput',

@@ -1,13 +1,14 @@
+import { setSpawnSync } from '../Problem.actions.js';
 import validator from '../Problem.validator.js';
 
 test('Validate Problem ID', () => {
-  validator.setSpawnSync(jest.fn().mockReturnValue({ stdout: '[code=-1]' }));
+  setSpawnSync(jest.fn().mockReturnValue({ stdout: '[code=-1]' }));
   let validateId = validator.id.bind({
     async: () => message => expect(message).toBe('Please login using leetcode-cli'),
   });
   validateId(1);
 
-  validator.setSpawnSync(jest.fn().mockReturnValue({ stdout: '' }));
+  setSpawnSync(jest.fn().mockReturnValue({ stdout: '' }));
   validateId = validator.id.bind({
     async: () => (message, value) => expect(value).toBeTruthy(),
   });
@@ -18,7 +19,7 @@ test('Validate Problem ID', () => {
   });
   validateId('');
 
-  validator.setSpawnSync(jest.fn().mockReturnValue({ stdout: 'Problem not found!' }));
+  setSpawnSync(jest.fn().mockReturnValue({ stdout: 'Problem not found!' }));
   validateId = validator.id.bind({
     async: () => message => expect(message).toBe('Invalid Problem ID'),
   });

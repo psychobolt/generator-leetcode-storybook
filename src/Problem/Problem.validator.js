@@ -1,18 +1,11 @@
-import { execaSync } from 'execa';
-
-let spawnSync = execaSync;
+import { runCommand } from './Problem.actions.js';
 
 export default {
-  // TODO remove when es6 module mocking is supported
-  setSpawnSync(spawn) {
-    spawnSync = spawn;
-  },
-
   id(input) {
     const done = this.async();
 
     if (typeof input === 'number') {
-      const { stdout } = spawnSync('leetcode', ['show', input]);
+      const { stdout } = runCommand(['show', input]);
       if (stdout.indexOf('Problem not found!') > -1) {
         done('Invalid Problem ID');
       } else if (stdout.indexOf('[code=-1]') > -1) {
