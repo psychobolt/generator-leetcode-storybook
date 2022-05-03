@@ -47,7 +47,7 @@ export default class Problem extends Generator {
     const { alias, source } = resolver.code(id);
     const name = alias.charAt(0).toUpperCase() + alias.slice(1);
     const titlePath = [...pathParts.map(pathPart => pathPart.replace(/([A-Z]+)*([A-Z][a-z])/g, '$1 $2').trim()), `[${id}] ${problem.title}`].join('/');
-    const relativePath = `./${path.join(...pathParts, name)}`;
+    const relativePath = path.join(this.options.storiesDir, ...pathParts, name);
     const destinationPath = path.join(this.destinationRoot(), relativePath);
     const problemPath = `./${name}.md`;
     const solutionPath = `./${alias}.es3.cjs`;

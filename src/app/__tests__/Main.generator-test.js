@@ -20,8 +20,7 @@ describe(`Main Generator ${(generator)} runs correctly in ${tmpDir}`, () => {
 
   it('with options', async () => {
     await helpers.create(generator)
-      .inDir(tmpDir)
-      .withOptions({ cache, problemId: 1 })
+      .withOptions({ storyDir: './tmp', cache, problemId: 1 })
       .build()
       .run();
   });
