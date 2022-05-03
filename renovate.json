@@ -6,7 +6,7 @@
   "automergeType": "branch",
   "packageRules": [
     {
-      "matchPackageNames": ["flow-bin", "eslint"],
+      "matchPackageNames": ["@mdx-js/react", "flow-bin", "eslint"],
       "automerge": false
     }
   ]
