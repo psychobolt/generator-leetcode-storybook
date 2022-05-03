@@ -65,6 +65,7 @@ typings/
 
 # dist
 **/dist/*
+storybook-static
 
 # flow
 flow-deps-modules
