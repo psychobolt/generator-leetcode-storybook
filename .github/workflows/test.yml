@@ -64,6 +64,9 @@ jobs:
         shell: bash
       - run: yarn yo . --storiesDir ./tmp --problemId 1 --path Array --cache ./src/Problem/__tests__/1.two-sum.algorithms.json
         shell: bash
+      - run: yarn build-storybook
+        shell: bash
       - uses: chromaui/action@v1
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          storybookBuildDir: storybook-static
