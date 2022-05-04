@@ -76,6 +76,7 @@ package-lock.json
 
 # temp files
 tmp
+src/App/__tests__/dummy_project
 
 # Mac files
 .DS_Store

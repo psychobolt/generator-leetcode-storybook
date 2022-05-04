@@ -23,12 +23,8 @@
         "request": "launch",
         "runtimeExecutable": "yarn",
         "stopOnEntry": false,
-        "args": [
-          "../",
-          "--problemId",
-          "1"
-        ],
-        "cwd": "${workspaceRoot}/tmp",
+        "args": ["."],
+        "cwd": "${workspaceRoot}",
         "runtimeArgs": [
           "yo",
         ],

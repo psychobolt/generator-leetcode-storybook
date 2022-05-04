@@ -25,8 +25,11 @@
   "dependencies": {
     "espree": "9.3.1",
     "execa": "6.1.0",
+    "glob": "8.0.1",
     "json5": "2.2.1",
+    "require-from-string": "2.0.2",
     "slash": "4.0.0",
+    "to-absolute-glob": "https://github.com/psychobolt/to-absolute-glob",
     "vsc-leetcode-cli": "2.8.0",
     "yeoman-generator": "5.6.1"
   },
@@ -89,7 +92,6 @@
     "markdown-to-jsx": "7.1.7",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "require-from-string": "2.0.2",
     "rimraf": "3.0.2",
     "symlink-dir": "5.0.1",
     "webpack": "5.72.0",
