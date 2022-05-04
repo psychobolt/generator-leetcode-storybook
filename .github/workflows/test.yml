@@ -31,7 +31,7 @@ jobs:
       - uses: actions/setup-node@v3
       - run: yarn install
         shell: bash
-      - run: NODE_ENV=test yarn c8 yarn test
+      - run: yarn c8 yarn test
         shell: bash
       - uses: actions/upload-artifact@v3
         with:
