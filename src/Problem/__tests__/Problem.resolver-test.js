@@ -2,7 +2,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import fs from 'fs';
 
-import { setSpawnSync } from '../Problem.actions.js';
+import { setCache, setSpawnSync } from '../Problem.actions.js';
 import resolver from '../Problem.resolver.js';
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -10,6 +10,7 @@ const readFile = filepath => fs.readFileSync(path.resolve(dirname, filepath), { 
 
 describe('Resolve Problem', () => {
   beforeAll(() => {
+    setCache([]);
     setSpawnSync((_, args) => {
       let stdout = '';
       if (args[0] === 'show') {

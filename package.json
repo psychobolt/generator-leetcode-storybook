@@ -14,7 +14,7 @@
     "flow-typed-update": "yarn node flow-typed-update.js",
     "flow-typed-install": "yarn rimraf shared/flow-typed/npm && yarn run flow-typed-update",
     "flow-typed-create-stub": "yarn flow-typed create-stub --libdefDir shared/flow-typed/",
-    "test": "yarn jest --passWithNoTests",
+    "test": "yarn rimraf \"**/*/__tests__/tmp\" && yarn jest --passWithNoTests --runInBand",
     "lint": "yarn eslint \"**/*.?(c|m)js\"",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"

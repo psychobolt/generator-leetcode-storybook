@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import helpers from 'yeoman-test';
-import rimraf from 'rimraf';
 
 const dirname = path.dirname(fileURLToPath(import/*:: ("") */.meta.url));
 const tmpDir = path.resolve(dirname, 'tmp');
@@ -17,48 +16,49 @@ function createTempConfig(sessionDir, contents) {
 }
 
 describe(`Main Generator ${(generator)} runs correctly`, () => {
-  afterAll(done => rimraf(
-    tmpDir,
-    { disableGlob: true },
-    error => {
-      expect(error).toEqual(null);
-      done();
-    },
-  ));
+  describe('with prompts', () => {
+    let runContext;
 
-  it('with prompts', async () => {
-    const sessionDir = path.resolve(tmpDir, `${new Date().getTime()}`);
-    await helpers.create(generator)
-      .inDir(sessionDir, () => createTempConfig(
-        sessionDir,
-        'module.exports = { stories: [\'../stories/**/*.(problem|solution).mdx\'] };',
-      ))
-      .withPrompts({ id: 1, pathInput: 'Array' })
-      .withOptions({ cache })
-      .build()
-      .run();
+    beforeAll(() => {
+      const sessionDir = path.resolve(tmpDir, `${new Date().getTime()}`);
+      runContext = helpers.create(generator)
+        .inDir(sessionDir, () => createTempConfig(
+          sessionDir,
+          'module.exports = { stories: [\'../stories/**/*.(problem|solution).mdx\'] };',
+        ))
+        .withPrompts({ id: 1, pathInput: 'Array' })
+        .withOptions({ cache })
+        .build();
+    });
+
+    test('and storybook config', async () => runContext.run());
   });
 
-  it('with ambigious stories directory', async () => {
-    const sessionDir = path.resolve(tmpDir, `${new Date().getTime()}`);
-    try {
-      await helpers.create(generator)
+  describe('with no prompts', () => {
+    let runContext;
+
+    beforeAll(() => {
+      const sessionDir = path.resolve(tmpDir, `${new Date().getTime()}`);
+      runContext = helpers.create(generator)
         .inDir(sessionDir, () => createTempConfig(
           sessionDir,
           'module.exports = { stories: [\'../src/**/*.stories.js\', \'../stories/**/*.stories.mdx\'] };',
         ))
-        .build()
-        .run();
-    } catch (e) {
-      expect(e.message).toMatch('Primary stories directory is ambigious. Please specify the target directory in options');
-    }
+        .build();
+    });
+
+    test('and ambigious stories directory', async () => {
+      try {
+        await runContext.run();
+      } catch (e) {
+        expect(e.message).toMatch('Primary stories directory is ambigious. Please specify the target directory in options');
+      }
+    });
   });
 
   it('with missing storybook config', async () => {
-    const sessionDir = path.resolve(tmpDir, `${new Date().getTime()}`);
     try {
       await helpers.create(generator)
-        .inDir(sessionDir)
         .build()
         .run();
     } catch (e) {
@@ -66,12 +66,17 @@ describe(`Main Generator ${(generator)} runs correctly`, () => {
     }
   });
 
-  it('with options', async () => {
-    const sessionDir = path.resolve(tmpDir, `${new Date().getTime()}`);
-    await helpers.create(generator)
-      .inDir(sessionDir)
-      .withOptions({ storiesDir: './stories', cache, problemId: 1 })
-      .build()
-      .run();
+  describe('with options', () => {
+    let runContext;
+
+    beforeAll(() => {
+      const sessionDir = path.resolve(tmpDir, `${new Date().getTime()}`);
+      runContext = helpers.create(generator)
+        .inDir(sessionDir)
+        .withOptions({ storiesDir: './stories', cache, problemId: 1 })
+        .build();
+    });
+
+    it('and storiesDir specified', async () => runContext.run());
   });
 });
