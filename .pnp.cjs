@@ -81,7 +81,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-flowtype", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:8.0.3"],\
             ["eslint-plugin-import", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:2.26.0"],\
             ["eslint-plugin-jest", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:26.1.5"],\
-            ["espree", "npm:9.3.1"],\
+            ["espree", "npm:9.3.2"],\
             ["execa", "npm:6.1.0"],\
             ["flow-bin", "npm:0.175.1"],\
             ["flow-typed", "npm:3.7.0"],\
@@ -13784,6 +13784,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-visitor-keys", "npm:3.3.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:9.3.2", {\
+          "packageLocation": "./.yarn/cache/espree-npm-9.3.2-c70fa2a91d-9a790d6779.zip/node_modules/espree/",\
+          "packageDependencies": [\
+            ["espree", "npm:9.3.2"],\
+            ["acorn", "npm:8.7.1"],\
+            ["acorn-jsx", "virtual:0c9e34c3fa9d80d85520d8d206a6d431b6acc46e375bc5793862c9de34e0711c329e0aaf529612a1d5d8e52101498a40626cf537f586fa00088be1ad22c166df#npm:5.3.2"],\
+            ["eslint-visitor-keys", "npm:3.3.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["esprima", [\
@@ -15080,7 +15090,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-flowtype", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:8.0.3"],\
             ["eslint-plugin-import", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:2.26.0"],\
             ["eslint-plugin-jest", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:26.1.5"],\
-            ["espree", "npm:9.3.1"],\
+            ["espree", "npm:9.3.2"],\
             ["execa", "npm:6.1.0"],\
             ["flow-bin", "npm:0.175.1"],\
             ["flow-typed", "npm:3.7.0"],\

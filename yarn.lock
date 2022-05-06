@@ -5395,7 +5395,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn-jsx@npm:^5.3.1":
+"acorn-jsx@npm:^5.3.1, acorn-jsx@npm:^5.3.2":
   version: 5.3.2
   resolution: "acorn-jsx@npm:5.3.2"
   peerDependencies:
@@ -5438,7 +5438,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:^8.4.1, acorn@npm:^8.5.0, acorn@npm:^8.7.0":
+"acorn@npm:^8.4.1, acorn@npm:^8.5.0, acorn@npm:^8.7.0, acorn@npm:^8.7.1":
   version: 8.7.1
   resolution: "acorn@npm:8.7.1"
   bin:
@@ -9415,7 +9415,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"espree@npm:9.3.1, espree@npm:^9.3.1":
+"espree@npm:9.3.2":
+  version: 9.3.2
+  resolution: "espree@npm:9.3.2"
+  dependencies:
+    acorn: ^8.7.1
+    acorn-jsx: ^5.3.2
+    eslint-visitor-keys: ^3.3.0
+  checksum: 9a790d6779847051e87f70d720a0f6981899a722419e80c92ab6dee01e1ab83b8ce52d11b4dc96c2c490182efb5a4c138b8b0d569205bfe1cd4629e658e58c30
+  languageName: node
+  linkType: hard
+
+"espree@npm:^9.3.1":
   version: 9.3.1
   resolution: "espree@npm:9.3.1"
   dependencies:
@@ -10577,7 +10588,7 @@ __metadata:
     eslint-plugin-flowtype: 8.0.3
     eslint-plugin-import: 2.26.0
     eslint-plugin-jest: 26.1.5
-    espree: 9.3.1
+    espree: 9.3.2
     execa: 6.1.0
     flow-bin: 0.175.1
     flow-typed: 3.7.0
