@@ -1,3 +1,5 @@
+import badgesConfig from './leetcode-badges.js';
+
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
@@ -6,4 +8,5 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  badgesConfig,
 };

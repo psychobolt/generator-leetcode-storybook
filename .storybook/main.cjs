@@ -5,6 +5,7 @@ module.exports = {
     '../tmp/**/*.(problem|solution).mdx',
   ],
   addons: [
+    '@geometricpanda/storybook-addon-badges',
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',

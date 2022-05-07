@@ -11,13 +11,15 @@
     "access": "public"
   },
   "scripts": {
+    "start": "yarn yo .",
     "flow-typed-update": "yarn node flow-typed-update.js",
     "flow-typed-install": "yarn rimraf shared/flow-typed/npm && yarn run flow-typed-update",
     "flow-typed-create-stub": "yarn flow-typed create-stub --libdefDir shared/flow-typed/",
     "test": "yarn rimraf \"**/*/__tests__/tmp\" && yarn jest --passWithNoTests --runInBand",
     "lint": "yarn eslint \"**/*.?(c|m)js\"",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build-storybook-badges": "yarn node ./build-badges.js"
   },
   "keywords": [
     "yeoman-generator"
@@ -56,6 +58,7 @@
     "@babel/plugin-transform-shorthand-properties": "7.16.7",
     "@babel/plugin-transform-spread": "7.16.7",
     "@babel/preset-env": "7.17.10",
+    "@geometricpanda/storybook-addon-badges": "0.2.1",
     "@mdx-js/react": "1.6.22",
     "@storybook/addon-actions": "6.5.0-alpha.62",
     "@storybook/addon-docs": "6.5.0-alpha.62",

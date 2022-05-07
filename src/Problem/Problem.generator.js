@@ -44,6 +44,7 @@ export default class Problem extends Generator {
     const { id = this.options.problemId, pathInput = this.options.path || '' } = this.answers;
     const pathParts = getPathParts(pathInput);
     const problem = resolver.problem(id);
+    const metadata = resolver.metadata(id, problem.title);
     const { alias, source } = resolver.code(id);
     const name = alias.charAt(0).toUpperCase() + alias.slice(1);
     const titlePath = [...pathParts.map(pathPart => pathPart.replace(/([A-Z]+)*([A-Z][a-z])/g, '$1 $2').trim()), `[${id}] ${problem.title}`].join('/');
@@ -58,7 +59,7 @@ export default class Problem extends Generator {
       this.destinationPath(path.join(destinationPath, `${name}.md`)),
       {
         ...problem,
-        ...resolver.metadata(id, problem.title),
+        ...metadata,
       },
     );
 
@@ -68,6 +69,7 @@ export default class Problem extends Generator {
       {
         titlePath,
         problemPath,
+        badges: JSON.stringify(metadata.tags.concat(metadata.companies)),
       },
     );
 
