@@ -39,4 +39,7 @@ const badges = [...keys].reduce((map, badge) => {
   };
 }, {});
 
-fs.writeFileSync('./.storybook/leetcode-badges.js', `export default ${JSON5.stringify(badges)}; // eslint-disable-line`);
+[
+  './.storybook/leetcode-badges.js',
+  './src/app/templates/leetcode-badges.js',
+].forEach(filepath => fs.writeFileSync(filepath, `export default ${JSON5.stringify(badges)}; // eslint-disable-line`));

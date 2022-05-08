@@ -19,9 +19,11 @@ export default class Main extends Generator {
   }
 
   initializing() {
+    const destinationPath = slash(this.destinationPath());
+    const storybookConfigDir = slash(path.join(destinationPath, '.storybook'));
+    this.storybookConfigDir = storybookConfigDir;
+
     if (!this.options.storiesDir) {
-      const destinationPath = slash(this.destinationPath());
-      const storybookConfigDir = slash(path.join(destinationPath, '.storybook'));
       const files = glob.sync(`${storybookConfigDir}/main.?(c)js`);
       if (files.length) {
         const filepath = files[0];
@@ -46,5 +48,15 @@ export default class Main extends Generator {
       Generator: Problem,
       path: require.resolve('../Problem/index.js'),
     }, this.options);
+  }
+
+  writing() {
+    const filename = 'leetcode-badges.js';
+    this.fs.copy(
+      this.templatePath(filename),
+      fs.existsSync(this.storybookConfigDir)
+        ? path.resolve(this.storybookConfigDir, filename)
+        : this.destinationPath('.storybook', filename),
+    );
   }
 }
