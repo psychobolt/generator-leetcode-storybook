@@ -59,4 +59,19 @@ export default class Main extends Generator {
         : this.destinationPath('.storybook', filename),
     );
   }
+
+  async install() {
+    const devDependencies = this.packageJson.get('devDependencies');
+    const semver = devDependencies && devDependencies['@storybook/react'];
+    if (semver) {
+      this.addDevDependencies({
+        '@storybook/addon-docs': semver,
+        '@storybook/components': semver,
+        '@storybook/theming': semver,
+        '@geometricpanda/storybook-addon-badges': '0.2.1',
+      });
+    } else {
+      this.log('No React Storybook configured. Please install React and run "sb init" on your project.');
+    }
+  }
 }

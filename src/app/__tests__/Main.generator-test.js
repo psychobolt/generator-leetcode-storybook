@@ -8,6 +8,10 @@ const tmpDir = path.resolve(dirname, 'tmp');
 const generator = path.resolve(dirname, '..', 'index.js');
 const cache = path.resolve(dirname, '..', '..', 'Problem', '__tests__', '1.two-sum.algorithms.json');
 
+function createPackageJSON(sessionDir, contents = '{ "devDependencies": { "@storybook/react": "6.4.22" } }') {
+  fs.writeFileSync(path.resolve(sessionDir, 'package.json'), contents);
+}
+
 function createTempConfig(sessionDir, contents) {
   const storybookDir = path.resolve(sessionDir, '.storybook');
   const storybookConfig = path.resolve(storybookDir, 'main.cjs');
@@ -22,10 +26,13 @@ describe(`Main Generator ${(generator)} runs correctly`, () => {
     beforeAll(() => {
       const sessionDir = path.resolve(tmpDir, `${new Date().getTime()}`);
       runContext = helpers.create(generator)
-        .inDir(sessionDir, () => createTempConfig(
-          sessionDir,
-          'module.exports = { stories: [\'../stories/**/*.(problem|solution).mdx\'] };',
-        ))
+        .inDir(sessionDir, () => {
+          createPackageJSON(sessionDir);
+          createTempConfig(
+            sessionDir,
+            'module.exports = { stories: [\'../stories/**/*.(problem|solution).mdx\'] };',
+          );
+        })
         .withPrompts({ id: 1, pathInput: 'Array' })
         .withOptions({ cache })
         .build();
@@ -40,10 +47,13 @@ describe(`Main Generator ${(generator)} runs correctly`, () => {
     beforeAll(() => {
       const sessionDir = path.resolve(tmpDir, `${new Date().getTime()}`);
       runContext = helpers.create(generator)
-        .inDir(sessionDir, () => createTempConfig(
-          sessionDir,
-          'module.exports = { stories: [\'../src/**/*.stories.js\', \'../stories/**/*.stories.mdx\'] };',
-        ))
+        .inDir(sessionDir, () => {
+          createPackageJSON(sessionDir);
+          createTempConfig(
+            sessionDir,
+            'module.exports = { stories: [\'../src/**/*.stories.js\', \'../stories/**/*.stories.mdx\'] };',
+          );
+        })
         .build();
     });
 

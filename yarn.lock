@@ -10630,6 +10630,8 @@ __metadata:
     yeoman-generator: 5.6.1
     yeoman-test: 6.3.0
     yo: 4.3.0
+  peerDependencies:
+    vsc-leetcode-cli: "*"
   languageName: unknown
   linkType: soft
 

@@ -32,7 +32,6 @@
     "require-from-string": "2.0.2",
     "slash": "4.0.0",
     "to-absolute-glob": "https://github.com/psychobolt/to-absolute-glob",
-    "vsc-leetcode-cli": "2.8.0",
     "yeoman-generator": "5.6.1"
   },
   "devDependencies": {
@@ -97,10 +96,14 @@
     "react-dom": "18.1.0",
     "rimraf": "3.0.2",
     "symlink-dir": "5.0.1",
+    "vsc-leetcode-cli": "2.8.0",
     "webpack": "5.72.0",
     "yeoman-environment": "3.9.1",
     "yeoman-test": "6.3.0",
     "yo": "4.3.0"
   },
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.2.0",
+  "peerDependencies": {
+    "vsc-leetcode-cli": "*"
+  }
 }

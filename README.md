@@ -15,21 +15,12 @@ https://psychobolt.github.io/leetcode-storybook
 
 ## Requirements
 
-Yeoman and a [React storybook](https://github.com/psychobolt/leetcode-storybook-starter) project (semver ^6.4.x) setup with the following packages (`sb init` may already added some packages for you):
-
- - `@storybook/addon-docs`@(same semver as `@storybook/react`)
- - `@storybook/components`@(same semver as` @storybook/react`)
- - `@storybook/theming`@(same semver as `@storybook/react`)
- - `@geometricpanda/storybook-addon-badges@^0.2.1` (optional, see [Configure Storybook Badges](#-optional-configuring-storybook-badges))
- - `markdown-to-jsx@^7.1.7`
+[Yeoman](https://yeoman.io/learning/index.html) and a [React storybook](https://storybook.js.org/docs/react/get-started/install) (+6.4) project
 
 
-> Alternatively, you may fork the preconfigured repo, [leetcode-storybook-starter](https://github.com/psychobolt/leetcode-storybook-starter) which includes all configurations and requirements.
+> Alternatively, you may fork [psychobolt/leetcode-storybook-starter](https://github.com/psychobolt/leetcode-storybook-starter) which includes the necesary requirements and configurations.
 
 ## Install (Coming Soon)
-
-1. Install any [essential packages](#requirements).
-2. Run the following
 
 ```sh
 npm install -D generator-leetcode-storybook vsc-leetcode-cli
