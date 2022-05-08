@@ -15,7 +15,7 @@
   <summary><strong>Companies</strong></summary>
 
   <%= companies.join(' | ') %>
-  
+
 </details>
 <br />
 <%- body %>

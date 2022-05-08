@@ -65,10 +65,13 @@ export default class Main extends Generator {
     const semver = devDependencies && devDependencies['@storybook/react'];
     if (semver) {
       this.addDevDependencies({
+        '@storybook/addons': semver,
         '@storybook/addon-docs': semver,
+        '@storybook/api': semver,
         '@storybook/components': semver,
         '@storybook/theming': semver,
         '@geometricpanda/storybook-addon-badges': '0.2.1',
+        'markdown-to-jsx': '7.1.7',
       });
     } else {
       this.log('No React Storybook configured. Please install React and run "sb init" on your project.');

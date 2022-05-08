@@ -69,7 +69,7 @@ export default class Problem extends Generator {
       {
         titlePath,
         problemPath,
-        badges: JSON.stringify(metadata.tags.concat(metadata.companies)),
+        badges: `['${metadata.tags.concat(metadata.companies).join('\', \'')}']`,
       },
     );
 

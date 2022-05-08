@@ -30,7 +30,7 @@ export default {
     // See https://github.com/LeetCode-OpenSource/vscode-leetcode/blob/de1dc4161b497b4f76faad2363abab0104a75373/src/webview/leetCodePreviewProvider.ts#L150
     return {
       ...rest,
-      body: body.replace(/<pre>[\r\n]*([^]+?)[\r\n]*<\/pre>/g, '<pre><code>$1</code></pre>'),
+      body: body.replace(/<pre>[\r\n]*([^]+?)[\r\n]*<\/pre>/g, '<pre><code>$1</code></pre>').replace(/\t/g, '  '),
     };
   },
 

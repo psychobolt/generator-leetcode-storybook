@@ -15,7 +15,7 @@ https://psychobolt.github.io/leetcode-storybook
 
 ## Requirements
 
-[Yeoman](https://yeoman.io/learning/index.html) and a [React storybook](https://storybook.js.org/docs/react/get-started/install) (+6.4) project
+[Yeoman](https://yeoman.io/learning/index.html) and a [React storybook](https://storybook.js.org/docs/react/get-started/install) (6.4+) project with [Webpack 5 builder](https://www.npmjs.com/package/@storybook/builder-webpack5) preconfigued
 
 
 > Alternatively, you may fork [psychobolt/leetcode-storybook-starter](https://github.com/psychobolt/leetcode-storybook-starter) which includes the necesary requirements and configurations.
@@ -23,9 +23,7 @@ https://psychobolt.github.io/leetcode-storybook
 ## Install (Coming Soon)
 
 ```sh
-npm install -D generator-leetcode-storybook vsc-leetcode-cli
-# or 
-yarn add -D generator-leetcode-storybook vsc-leetcode-cli
+npm install -g generator-leetcode-storybook vsc-leetcode-cli
 ```
 
 ## Configuration
@@ -34,24 +32,27 @@ yarn add -D generator-leetcode-storybook vsc-leetcode-cli
 
 ```sh
 leetcode user [-g]  # Log in with github account. See official docs for user login options.
-# or 
-yarn leetcode user [-g]
 ```
 
 > Note: Leetcode CLI only supports [github](https://github.com/) or [linkedin](https://www.linkedin.com) logins for US accounts.
 
+2. Include story paths for problem and solution for Storybook.
 
-2. Run the Generator with Yeoman in your Storybook project and answer the generator's prompts
+```js
+// .storybook/main.js
+module.exports = {
+  /* ... */
+  stories: [
+    '../**/*.(problem|solution).mdx',
+    /* ... */
+  ],
+  /* ... */
+}
+```
 
-```sh
-yo leetcode-storybook
-# or 
-yarn yo leetcode-storybook
-``` 
+3. Include 'raw' loader 
 
-> It is recommended to run the generator at the project root in order to detect your .storybook/ configurations.
-
-###  (Optional) Configure Storybook Badges
+4. (Optional) Configure Storybook Badges
 
 ```js
 // ./storybook/preview.js
@@ -62,6 +63,16 @@ export const parameters = {
   badgesConfig, // include badgesConfig
 };
 ```
+
+## Usage
+
+Run the Generator with Yeoman in your Storybook project and answer the generator's prompts
+
+```sh
+yo leetcode-storybook
+``` 
+
+> It is recommended to run the generator at the project root in order to detect your .storybook/ configurations.
 
 ## Development Guide
 
