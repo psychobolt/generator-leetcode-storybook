@@ -1,6 +1,6 @@
 {
   "name": "generator-leetcode-storybook",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Yeoman Generator that scafolds LeetCode problem templates into your Storybook",
   "type": "module",
   "main": "src/app/index.js",
