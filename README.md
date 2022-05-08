@@ -36,7 +36,7 @@ leetcode user [-g]  # Log in with github account. See official docs for user log
 
 > Note: Leetcode CLI only supports [github](https://github.com/) or [linkedin](https://www.linkedin.com) logins for US accounts.
 
-2. Include story paths for problem and solution for Storybook.
+2. Include story paths for problem and solution for Storybook. For example,
 
 ```js
 // .storybook/main.js
@@ -50,9 +50,36 @@ module.exports = {
 }
 ```
 
-3. Include 'raw' loader 
+3. Include `asset/source` rule for Markdown (`.md`) files using a custom webpack config. For example,
 
-4. (Optional) Configure Storybook Badges
+```js
+// .storybook/main.js
+module.exports = {
+  /* ... */
+  webpackFinal: config => ({
+    ...config,
+    module: {
+      ...config.module,
+      rules: [
+        ...config.module.rules.map(rule => {
+          if (test.test('.md')) {
+            return { ...rule, resourceQuery: { not: [/raw/] } };
+          }
+          return rule;
+        }),
+        {
+          resourceQuery: /raw/,
+          type: 'asset/source',
+        },
+      ],
+    },
+    /* ... */
+  }),
+  /* ... */
+}
+```
+
+4. (Optional) Configure Storybook Badges. For example,
 
 ```js
 // ./storybook/preview.js
