@@ -20,7 +20,7 @@ https://psychobolt.github.io/leetcode-storybook
 
 > Alternatively, you may fork [psychobolt/leetcode-storybook-starter](https://github.com/psychobolt/leetcode-storybook-starter) which includes the necesary requirements and configurations.
 
-## Install (Coming Soon)
+## Install
 
 ```sh
 npm install -g generator-leetcode-storybook vsc-leetcode-cli
