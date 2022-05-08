@@ -6,6 +6,7 @@ coverage
 flow-deps-modules
 shared
 storybook-static
+__tests__
 tmp
 .c8rc.json
 .eslintignore
