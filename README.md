@@ -24,7 +24,7 @@ Yeoman and a [React storybook](https://github.com/psychobolt/leetcode-storybook-
  - `markdown-to-jsx@^7.1.7`
 
 
-> Alternatively, you may fork the preconfigured repo, [leetcode-storybook-starter](https://github.com/psychobolt/leetcode-storybook-starter) which includes all configurations.
+> Alternatively, you may fork the preconfigured repo, [leetcode-storybook-starter](https://github.com/psychobolt/leetcode-storybook-starter) which includes all configurations and requirements.
 
 ## Install (Coming Soon)
 
