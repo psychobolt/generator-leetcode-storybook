@@ -18,7 +18,7 @@ https://psychobolt.github.io/leetcode-storybook
 [Yeoman](https://yeoman.io/learning/index.html) and a [React storybook](https://storybook.js.org/docs/react/get-started/install) (6.4+) project with [Webpack 5 builder](https://www.npmjs.com/package/@storybook/builder-webpack5) preconfigued
 
 
-> Alternatively, you may fork [psychobolt/leetcode-storybook-starter](https://github.com/psychobolt/leetcode-storybook-starter) which includes the necesary requirements and configurations.
+> Alternatively, you may fork [psychobolt/leetcode-storybook-starter](https://github.com/psychobolt/leetcode-storybook-starter) which includes the necessary requirements and configurations.
 
 ## Install
 
