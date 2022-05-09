@@ -1,6 +1,6 @@
 {
   "name": "generator-leetcode-storybook",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Yeoman Generator that scafolds LeetCode problem templates into your Storybook",
   "type": "module",
   "main": "src/app/index.js",
@@ -65,8 +65,8 @@
     "@storybook/addon-essentials": "6.5.0-alpha.62",
     "@storybook/addon-interactions": "6.5.0-alpha.62",
     "@storybook/addon-links": "6.5.0-alpha.62",
-    "@storybook/addons": "6.4.22",
-    "@storybook/api": "6.4.22",
+    "@storybook/addons": "6.5.0-alpha.62",
+    "@storybook/api": "6.5.0-alpha.62",
     "@storybook/builder-webpack5": "6.5.0-alpha.62",
     "@storybook/components": "6.5.0-alpha.62",
     "@storybook/manager-webpack5": "6.5.0-alpha.62",
