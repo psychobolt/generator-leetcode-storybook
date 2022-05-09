@@ -47,7 +47,7 @@ module.exports = {
     /* ... */
   ],
   /* ... */
-}
+};
 ```
 
 3. Include `asset/source` rule for Markdown (`.md`) files using a custom webpack config. For example,
@@ -76,18 +76,32 @@ module.exports = {
     /* ... */
   }),
   /* ... */
-}
+};
 ```
 
 4. (Optional) Configure Storybook Badges. For example,
 
 ```js
-// ./storybook/preview.js
+// .storybook/preview.js
 import badgesConfig from './leetcode-badges.js';
 
 export const parameters = {
   /* ... */
   badgesConfig, // include badgesConfig
+};
+```
+
+Include the badges addon,
+
+```js
+// .storybook/main.js
+module.exports = {
+  /* ... */
+  addons: [
+    '@geometricpanda/storybook-addon-badges',
+    /* ... */
+  ],
+  /* ... */
 };
 ```
 
