@@ -26,22 +26,32 @@ export default class Problem extends Generator {
   }
 
   async prompting() {
-    this.answers = await this.prompt([{
+    const { id = this.options.problemId } = await this.prompt([{
       type: 'number',
       name: 'id',
       message: 'Enter the problem ID',
       validate: validator.id,
       when: !this.options.cache || !this.options.problemId,
-    }, {
+    }]);
+    const savedPath = this.config.getPath(`problem.$${id}.path`);
+    const { pathInput = this.options.path || '' } = await this.prompt([{
       type: 'input',
       name: 'pathInput',
-      message: 'Enter a path you want to create this problem in (e.g. DataStructure/Array)',
+      message: `Enter a path you want to create this problem in, e.g.${savedPath ? '' : ' (DataStructure/Array)'}`,
+      default: this.config.getPath(`problem.$${id}.path`) || undefined,
       when: !this.options.path,
     }]);
+    this.problemId = id;
+    this.pathInput = pathInput;
+  }
+
+  configuring() {
+    this.config.setPath(`problem.$${this.problemId}.path`, this.pathInput);
+    this.config.save();
   }
 
   writing() {
-    const { id = this.options.problemId, pathInput = this.options.path || '' } = this.answers;
+    const { problemId: id, pathInput } = this;
     const pathParts = getPathParts(pathInput);
     const problem = resolver.problem(id);
     const metadata = resolver.metadata(id, problem.title);

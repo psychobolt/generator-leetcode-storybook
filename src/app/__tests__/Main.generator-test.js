@@ -89,4 +89,25 @@ describe(`Main Generator ${(generator)} runs correctly`, () => {
 
     it('and storiesDir specified', async () => runContext.run());
   });
+
+  describe('with saved config', () => {
+    let runContext;
+
+    beforeAll(() => {
+      const sessionDir = path.resolve(tmpDir, `${new Date().getTime()}`);
+      runContext = helpers.create(generator)
+        .inDir(sessionDir)
+        .withLocalConfig({
+          problem: {
+            $1: {
+              path: 'Array',
+            },
+          },
+        })
+        .withOptions({ storiesDir: './stories', cache, problemId: 1 })
+        .build();
+    });
+
+    it('and storiesDir specified', async () => runContext.run());
+  });
 });

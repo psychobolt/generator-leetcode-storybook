@@ -23,11 +23,8 @@
         "request": "launch",
         "runtimeExecutable": "yarn",
         "stopOnEntry": false,
-        "args": ["."],
         "cwd": "${workspaceRoot}",
-        "runtimeArgs": [
-          "yo",
-        ],
+        "runtimeArgs": ["start"],
         "console": "integratedTerminal",
       }
     ],

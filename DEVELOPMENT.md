@@ -6,11 +6,11 @@
 
 ## Local Development
 
-To test your generator, link your package with ```yarn link <YOUR_GENERATOR_DIR>``` and run ```yo [generator-name]``` (where 'generator-name' is your defined Yeoman generator name. For instance, by default the boilerplate provided name: ```example-generator```)
+To test your generator, run `yarn start`.
+
+> Problems will be generated in `./tmp`
 
 For more details, visit Yeoman's [authoring guide](http://yeoman.io/authoring/) for creating a generator.
-
-
 
 ## Including NPM packages
 
