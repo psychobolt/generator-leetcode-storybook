@@ -12,6 +12,7 @@ tmp
 .eslintignore
 .eslintrc.cjs
 .flowconfig
+.yo-rc.json
 build-badges.js
 DEVELOPMENT.md
 flow-typed-update.js
