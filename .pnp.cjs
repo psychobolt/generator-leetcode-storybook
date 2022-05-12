@@ -88,7 +88,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["execa", "npm:6.1.0"],\
             ["flow-bin", "npm:0.175.1"],\
             ["flow-typed", "npm:3.7.0"],\
-            ["glob", "npm:8.0.1"],\
+            ["glob", "npm:8.0.2"],\
             ["isbinaryfile", "npm:5.0.0"],\
             ["jest", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:28.1.0"],\
             ["jest-cli", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:28.1.0"],\
@@ -15324,7 +15324,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["execa", "npm:6.1.0"],\
             ["flow-bin", "npm:0.175.1"],\
             ["flow-typed", "npm:3.7.0"],\
-            ["glob", "npm:8.0.1"],\
+            ["glob", "npm:8.0.2"],\
             ["isbinaryfile", "npm:5.0.0"],\
             ["jest", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:28.1.0"],\
             ["jest-cli", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:28.1.0"],\
@@ -15492,16 +15492,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:8.0.1", {\
-          "packageLocation": "./.yarn/cache/glob-npm-8.0.1-3485e1ee02-7ac782f3ef.zip/node_modules/glob/",\
+        ["npm:8.0.2", {\
+          "packageLocation": "./.yarn/cache/glob-npm-8.0.2-4d57d42757-9897d6d445.zip/node_modules/glob/",\
           "packageDependencies": [\
-            ["glob", "npm:8.0.1"],\
+            ["glob", "npm:8.0.2"],\
             ["fs.realpath", "npm:1.0.0"],\
             ["inflight", "npm:1.0.6"],\
             ["inherits", "npm:2.0.3"],\
             ["minimatch", "npm:5.0.1"],\
-            ["once", "npm:1.4.0"],\
-            ["path-is-absolute", "npm:1.0.1"]\
+            ["once", "npm:1.4.0"]\
           ],\
           "linkType": "HARD"\
         }]\
