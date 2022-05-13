@@ -33,7 +33,7 @@ describe(`Main Generator ${(generator)} runs correctly`, () => {
             'module.exports = { stories: [\'../stories/**/*.(problem|solution).mdx\'] };',
           );
         })
-        .withPrompts({ id: 1, pathInput: 'Array' })
+        .withPrompts({ id: 1, pathInput: 'Array', languages: 'java' })
         .withOptions({ cache })
         .build();
     });

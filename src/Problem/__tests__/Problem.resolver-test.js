@@ -34,6 +34,6 @@ describe('Resolve Problem', () => {
   });
 
   it('Get Code', () => {
-    resolver.code(1);
+    resolver.code(1, ['python3', 'scala']);
   });
 });

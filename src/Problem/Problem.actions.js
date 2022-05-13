@@ -4,8 +4,6 @@ import state from './Problem.state.js';
 
 let spawnSync = execaSync;
 
-const language = 'javascript';
-
 export function setSpawnSync(spawn) {
   spawnSync = spawn;
 }
@@ -65,13 +63,15 @@ export const getProblem = id => {
   };
 };
 
-export function getCode(id) {
+export function getCode(id, languages) {
   const cache = state.cache.find(problem => problem.id === id);
   if (cache) {
-    const template = cache.templates.find(({ value }) => value === language);
-    return template.defaultCode;
+    return languages.map(language => {
+      const template = cache.templates.find(({ value }) => value === language);
+      return template.defaultCode;
+    });
   }
-  return runCommand(['show', '-c', id, '-l', language]).stdout;
+  return languages.map(language => runCommand(['show', '-c', id, '-l', language]).stdout);
 }
 
 export const getTags = id => state.tags[id] || [];

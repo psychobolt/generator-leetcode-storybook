@@ -2,7 +2,27 @@ import * as espree from 'espree';
 
 import { getProblem, getCode, getTags, getCompanies } from './Problem.actions.js';
 
+const LANGUAGE_MAP = {
+  bash: 'sh',
+  c: 'c',
+  cpp: 'cpp',
+  csharp: 'cs',
+  golang: 'go',
+  java: 'java',
+  javascript: 'js',
+  kotlin: 'kt',
+  mysql: 'sql',
+  php: 'php',
+  python: 'py',
+  python3: 'py',
+  ruby: 'rb',
+  scala: 'sc',
+  swift: 'swift',
+};
+
 export default {
+  LANGUAGE_MAP,
+
   // metadata(id, title) {
   metadata(id) {
     // See https://github.com/LeetCode-OpenSource/vscode-leetcode/blob/de1dc4161b497b4f76faad2363abab0104a75373/src/commands/list.ts#L11
@@ -37,16 +57,22 @@ export default {
     };
   },
 
-  code(id) {
-    let code = getCode(id);
-    const ast = espree.parse(code);
-    const alias = ast.body[0].declarations[0].id.name;
-    code = code.split('\n').map(line => line
-      .replace(/\r/, '')
-      .replace(/^\s+$/, ''));
-    return {
-      alias,
-      source: `${code.join('\n')}\nmodule.exports = ${alias};`,
-    };
+  code(id, languages) {
+    return getCode(id, languages).map((data, index) => {
+      const language = languages[index];
+      if (language === 'javascript') {
+        const ast = espree.parse(data);
+        const alias = ast.body[0].declarations[0].id.name;
+        const code = data.split('\n').map(line => line
+          .replace(/\r/, '')
+          .replace(/^\s+$/, ''));
+        return {
+          language,
+          alias,
+          source: `${code.join('\n')}\nmodule.exports = ${alias};`,
+        };
+      }
+      return { language, source: data };
+    });
   },
 };

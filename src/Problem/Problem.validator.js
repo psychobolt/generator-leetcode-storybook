@@ -1,4 +1,5 @@
 import { runCommand } from './Problem.actions.js';
+import resolver from './Problem.resolver.js';
 
 export default {
   id(input) {
@@ -17,5 +18,17 @@ export default {
     }
 
     done('Invalid input');
+  },
+
+  languages(input) {
+    const done = this.async();
+
+    const invalid = input.split(/\s*,\s*/).find(language => !resolver.LANGUAGE_MAP[language]);
+    if (invalid) {
+      done(`${invalid.trim()} is not a supported language`);
+      return;
+    }
+
+    done(null, true);
   },
 };
