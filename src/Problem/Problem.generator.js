@@ -21,13 +21,26 @@ export default class Problem extends Generator {
   }
 
   initializing() {
-    if (this.options.cache) {
-      setCache([JSON.parse(readFile(this.options.cache))]);
+    const { cache, problemId, languages } = this.options;
+    const context = {
+      async: () => (message, success) => {
+        if (success) return;
+        this.env.error(message);
+      },
+    };
+    if (cache) {
+      setCache([JSON.parse(readFile(cache))]);
+    }
+    if (problemId) {
+      validator.id.call(context, problemId);
+    }
+    if (languages) {
+      validator.languages.call(context, languages);
     }
   }
 
   async prompting() {
-    const { id = this.options.problemId, languages } = await this.prompt([
+    const { id = this.options.problemId, languages = this.options.languages } = await this.prompt([
       {
         type: 'number',
         name: 'id',

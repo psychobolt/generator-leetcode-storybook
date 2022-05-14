@@ -66,6 +66,32 @@ describe(`Main Generator ${(generator)} runs correctly`, () => {
     });
   });
 
+  describe('with options only', () => {
+    let runContext;
+
+    beforeAll(() => {
+      const sessionDir = path.resolve(tmpDir, `${new Date().getTime()}`);
+      runContext = helpers.create(generator)
+        .inDir(sessionDir, () => {
+          createPackageJSON(sessionDir);
+          createTempConfig(
+            sessionDir,
+            'module.exports = { stories: [\'../stories/**/*.(problem|solution).mdx\'] };',
+          );
+        })
+        .withOptions({ cache, problemId: 1, path: 'Array', languages: 'css' })
+        .build();
+    });
+
+    test('and storybook config', async () => {
+      try {
+        await runContext.run();
+      } catch (e) {
+        expect(e.message).toMatch('css is not a supported language');
+      }
+    });
+  });
+
   it('with missing storybook config', async () => {
     try {
       await helpers.create(generator)
