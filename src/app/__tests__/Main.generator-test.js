@@ -3,6 +3,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import helpers from 'yeoman-test';
 
+import { setSpawnSync } from '../../Problem/Problem.actions.js';
+
 const dirname = path.dirname(fileURLToPath(import/*:: ("") */.meta.url));
 const tmpDir = path.resolve(dirname, 'tmp');
 const generator = path.resolve(dirname, '..', 'index.js');
@@ -85,6 +87,7 @@ describe(`Main Generator ${(generator)} runs correctly`, () => {
 
     test('and storybook config', async () => {
       try {
+        setSpawnSync(jest.fn().mockReturnValue({ stdout: '' }));
         await runContext.run();
       } catch (e) {
         expect(e.message).toMatch('css is not a supported language');
