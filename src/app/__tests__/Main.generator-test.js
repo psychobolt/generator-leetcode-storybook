@@ -3,8 +3,6 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import helpers from 'yeoman-test';
 
-import { setSpawnSync } from '../../Problem/Problem.actions.js';
-
 const dirname = path.dirname(fileURLToPath(import/*:: ("") */.meta.url));
 const tmpDir = path.resolve(dirname, 'tmp');
 const generator = path.resolve(dirname, '..', 'index.js');
@@ -64,33 +62,6 @@ describe(`Main Generator ${(generator)} runs correctly`, () => {
         await runContext.run();
       } catch (e) {
         expect(e.message).toMatch('Primary stories directory is ambigious. Please specify the target directory in options');
-      }
-    });
-  });
-
-  describe('with options only', () => {
-    let runContext;
-
-    beforeAll(() => {
-      const sessionDir = path.resolve(tmpDir, `${new Date().getTime()}`);
-      runContext = helpers.create(generator)
-        .inDir(sessionDir, () => {
-          createPackageJSON(sessionDir);
-          createTempConfig(
-            sessionDir,
-            'module.exports = { stories: [\'../stories/**/*.(problem|solution).mdx\'] };',
-          );
-        })
-        .withOptions({ cache, problemId: 1, path: 'Array', languages: 'css' })
-        .build();
-    });
-
-    test('and storybook config', async () => {
-      try {
-        setSpawnSync(jest.fn().mockReturnValue({ stdout: '' }));
-        await runContext.run();
-      } catch (e) {
-        expect(e.message).toMatch('css is not a supported language');
       }
     });
   });

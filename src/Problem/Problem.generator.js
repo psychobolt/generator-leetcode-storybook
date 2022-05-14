@@ -21,21 +21,9 @@ export default class Problem extends Generator {
   }
 
   initializing() {
-    const { cache, problemId, languages } = this.options;
-    const context = {
-      async: () => (message, success) => {
-        if (success) return;
-        this.env.error(message);
-      },
-    };
+    const { cache } = this.options;
     if (cache) {
       setCache([JSON.parse(readFile(cache))]);
-    }
-    if (problemId) {
-      validator.id.call(context, problemId);
-    }
-    if (languages) {
-      validator.languages.call(context, languages);
     }
   }
 
