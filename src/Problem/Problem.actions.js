@@ -63,15 +63,20 @@ export const getProblem = id => {
   };
 };
 
+function getLanguageAlias(language) {
+  if (language === 'python') return 'python3';
+  return language;
+}
+
 export function getCode(id, languages) {
   const cache = state.cache.find(problem => problem.id === id);
   if (cache) {
     return languages.map(language => {
-      const template = cache.templates.find(({ value }) => value === language);
+      const template = cache.templates.find(({ value }) => value === getLanguageAlias(language));
       return template.defaultCode;
     });
   }
-  return languages.map(language => runCommand(['show', '-c', id, '-l', language]).stdout);
+  return languages.map(language => runCommand(['show', '-c', id, '-l', getLanguageAlias(language)]).stdout);
 }
 
 export const getTags = id => state.tags[id] || [];

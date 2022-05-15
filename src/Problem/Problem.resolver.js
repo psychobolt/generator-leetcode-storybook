@@ -14,7 +14,6 @@ const LANGUAGE_MAP = {
   mysql: 'sql',
   php: 'php',
   python: 'py',
-  python3: 'py',
   ruby: 'rb',
   scala: 'sc',
   swift: 'swift',

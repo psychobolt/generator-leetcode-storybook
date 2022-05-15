@@ -11,6 +11,11 @@ const readFile = filepath => fs.readFileSync(filepath, { encoding: 'utf-8' });
 
 const getPathParts = pathInput => (pathInput ? slash(pathInput.trim()).split('/') : []);
 
+function getLanguageAlias(language) {
+  if (language === 'python3') return 'python';
+  return language;
+}
+
 export default class Problem extends Generator {
   constructor(args, opts) {
     super(args, opts);
@@ -28,7 +33,7 @@ export default class Problem extends Generator {
   }
 
   async prompting() {
-    const { id = this.options.problemId, languages = this.options.languages } = await this.prompt([
+    const { id = this.options.problemId } = await this.prompt([
       {
         type: 'number',
         name: 'id',
@@ -36,12 +41,14 @@ export default class Problem extends Generator {
         validate: validator.id,
         when: !this.options.cache || !this.options.problemId,
       },
+    ]);
+    const { languages = this.options.languages } = await this.prompt([
       {
         type: 'input',
         name: 'languages',
         message: 'Enter comma seperated languages you wish to generate code for',
         validate: validator.languages,
-        default: 'javascript',
+        default: (this.config.getPath(`problem.$${id}.languages`) || []).join(',') || 'javascript',
         when: !this.options.languages,
       },
     ]);
@@ -55,21 +62,27 @@ export default class Problem extends Generator {
     }]);
     this.problemId = id;
     this.pathInput = pathInput;
-    this.languages = languages.split(/\s*,\s*/);
+    this.languages = [...new Set(['javascript', ...languages.split(/\s*,\s*/).map(getLanguageAlias)])];
   }
 
   configuring() {
-    this.config.setPath(`problem.$${this.problemId}.path`, this.pathInput);
+    this.config.merge({
+      problem: {
+        [`$${this.problemId}`]: {
+          path: this.pathInput,
+          languages: this.languages,
+        },
+      },
+    });
     this.config.save();
   }
 
   writing() {
     const { problemId: id, pathInput, languages } = this;
-    const LANGUAGES = [...new Set(['javascript', ...languages])];
     const pathParts = getPathParts(pathInput);
     const problem = resolver.problem(id);
     const metadata = resolver.metadata(id, problem.title);
-    const [jsCode, ...codeList] = resolver.code(id, LANGUAGES);
+    const [jsCode, ...codeList] = resolver.code(id, languages);
     const { alias, source } = jsCode;
     const name = alias.charAt(0).toUpperCase() + alias.slice(1);
     const titlePath = [...pathParts.map(pathPart => pathPart.replace(/([A-Z]+)*([A-Z][a-z])/g, '$1 $2').trim()), `[${id}] ${problem.title}`].join('/');
@@ -102,10 +115,23 @@ export default class Problem extends Generator {
       this.templatePath('Solution.mdx'),
       this.destinationPath(path.join(destinationPath, `${name}.solution.mdx`)),
       {
-        titlePath,
+        titlePath: titlePath.concat('/Solution', codeList.length ? '/Javascript' : ''),
         solutionPath: solutionPath(),
       },
     );
+
+    codeList.forEach(code => {
+      const suffix = resolver.LANGUAGE_MAP[code.language];
+      const templatePath = this.templatePath(`Solution-${suffix}.mdx`);
+      this.fs.copyTpl(
+        fs.existsSync(templatePath) ? templatePath : this.templatePath('Solution-raw.mdx'),
+        this.destinationPath(path.join(destinationPath, `${name}-${suffix}.solution.mdx`)),
+        {
+          titlePath: titlePath.concat('/Solution', `/${code.language.charAt(0).toUpperCase() + code.language.slice(1)}`),
+          solutionPath: solutionPath(suffix),
+        },
+      );
+    });
 
     this.fs.copyTpl(
       this.templatePath('solution.ejs'),

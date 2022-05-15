@@ -1,9 +1,5 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs';
-import solution from '<%= solutionPath %>';
 import code from '<%= solutionPath %>?raw';
-import runTestCase, { cases } from './testCases.js';
-
-export const c0 = cases[0];
 
 <Meta title="<%= titlePath %>" />
 
@@ -17,11 +13,11 @@ Modify the solution file `<%= solutionPath %>` to test results.
   <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
     <div>
       <span>Input: </span>
-      <span>{JSON.stringify(c0.input)}</span>
+      <span></span>
     </div>
     <div>
       <span>Output: </span>
-      <span>{JSON.stringify(runTestCase(solution, c0))}</span>
+      <span></span>
     </div>
   </Story>
 </Canvas>
