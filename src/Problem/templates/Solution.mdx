@@ -16,12 +16,13 @@ Modify the solution file `<%= solutionPath %>` to test results.
 <Canvas withSource="open">
   <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
     <div>
-      <span>Input: </span>
-      <span>{JSON.stringify(c0.input)}</span>
+      <div>Input: </div>
+      <div>{JSON.stringify(c0.input)}</div>
     </div>
+    <br />
     <div>
-      <span>Output: </span>
-      <span>{JSON.stringify(runTestCase(solution, c0))}</span>
+      <div>Output: </div>
+      <div>{JSON.stringify(runTestCase(solution, c0))}</div>
     </div>
   </Story>
 </Canvas>
