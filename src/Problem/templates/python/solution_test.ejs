@@ -1,0 +1,9 @@
+import pytest
+from <%= problemName %> import Solution
+from testCases import runTestCase, cases
+
+
+@pytest.mark.parametrize('case', cases)
+def test(case):
+    solution = Solution()
+    assert runTestCase(solution.<%= problemName %>, case) == case['expected']

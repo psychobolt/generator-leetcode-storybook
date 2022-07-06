@@ -6,8 +6,7 @@
 [![Main workflow](https://github.com/psychobolt/generator-leetcode-storybook/actions/workflows/main.yml/badge.svg)](https://github.com/psychobolt/generator-leetcode-storybook/actions/workflows/main.yml)
 [![codecov](https://codecov.io/gh/psychobolt/generator-leetcode-storybook/branch/main/graph/badge.svg)](https://codecov.io/gh/psychobolt/generator-leetcode-storybook/tree/main/src)
 
-A [Yeoman](https://yeoman.io/) Generator that scaffolds [LeetCode](https://leetcode.com/) problems templates into your [Storybook](https://storybook.js.org/). 
-> [pyscript](https://www.anaconda.com/blog/pyscript-python-in-the-browser) support coming soon!
+A [Yeoman](https://yeoman.io/) Generator that scaffolds [LeetCode](https://leetcode.com/) problems templates into your [Storybook](https://storybook.js.org/).
 
 ## Example Storybook
 

@@ -1,6 +1,8 @@
 import badgesConfig from './leetcode-badges.js';
 
 export const parameters = {
+  viewMode: 'docs',
+  previewTabs: { canvas: { hidden: true } },
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     matchers: {

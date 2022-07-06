@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import glob from 'glob';
 import slash from 'slash';
 import Generator from 'yeoman-generator';
 
@@ -112,22 +113,23 @@ export default class Problem extends Generator {
     );
 
     this.fs.copyTpl(
-      this.templatePath('Solution.mdx'),
-      this.destinationPath(path.join(destinationPath, `${name}.solution.mdx`)),
+      this.templatePath('javascript', 'Solution.mdx'),
+      this.destinationPath(path.join(destinationPath, 'javascript', `${name}.solution.mdx`)),
       {
-        titlePath: titlePath.concat('/Solution', codeList.length ? '/Javascript' : ''),
+        titlePath: titlePath.concat('/Solution/Javascript'),
         solutionPath: solutionPath(),
       },
     );
 
     codeList.forEach(code => {
       const suffix = resolver.LANGUAGE_MAP[code.language];
-      const templatePath = this.templatePath(`Solution-${suffix}.mdx`);
+      const templatePath = this.templatePath(code.language, 'Solution.mdx');
       this.fs.copyTpl(
-        fs.existsSync(templatePath) ? templatePath : this.templatePath('Solution-raw.mdx'),
-        this.destinationPath(path.join(destinationPath, `${name}-${suffix}.solution.mdx`)),
+        fs.existsSync(templatePath) ? templatePath : this.templatePath('Solution.mdx'),
+        this.destinationPath(path.join(destinationPath, code.language, `${name}.solution.mdx`)),
         {
           titlePath: titlePath.concat('/Solution', `/${code.language.charAt(0).toUpperCase() + code.language.slice(1)}`),
+          problemName: alias,
           solutionPath: solutionPath(suffix),
         },
       );
@@ -135,7 +137,7 @@ export default class Problem extends Generator {
 
     this.fs.copyTpl(
       this.templatePath('solution.ejs'),
-      this.destinationPath(path.join(this.destinationRoot(), relativePath, solutionPath())),
+      this.destinationPath(path.join(this.destinationRoot(), relativePath, 'javascript', solutionPath())),
       { source },
     );
 
@@ -146,6 +148,7 @@ export default class Problem extends Generator {
           path.join(
             this.destinationRoot(),
             relativePath,
+            code.language,
             solutionPath(resolver.LANGUAGE_MAP[code.language]),
           ),
         ),
@@ -154,16 +157,47 @@ export default class Problem extends Generator {
     });
 
     this.fs.copy(
-      this.templatePath('testCases.js'),
-      this.destinationPath(path.join(destinationPath, 'testCases.js')),
+      this.templatePath('testCases.json'),
+      this.destinationPath(path.join(destinationPath, 'testCases.json')),
     );
+
+    this.fs.copy(
+      this.templatePath('javascript', 'testCases.js'),
+      this.destinationPath(path.join(destinationPath, 'javascript', 'testCases.js')),
+    );
+
+    codeList.forEach(code => {
+      const suffix = resolver.LANGUAGE_MAP[code.language];
+      const templatePath = this.templatePath(code.language, 'testCases.ejs');
+      if (fs.existsSync(templatePath)) {
+        this.fs.copyTpl(
+          templatePath,
+          this.destinationPath(path.join(destinationPath, code.language, `testCases.${suffix}`)),
+        );
+      }
+    });
+
     this.fs.copyTpl(
-      this.templatePath('problem.test.js'),
-      this.destinationPath(path.join(destinationPath, `${alias}.test.js`)),
+      this.templatePath('javascript', 'problem.test.js'),
+      this.destinationPath(path.join(destinationPath, 'javascript', `${alias}.test.js`)),
       {
         solutionPath: solutionPath(),
         titlePath,
       },
     );
+
+    codeList.forEach(code => {
+      const suffix = resolver.LANGUAGE_MAP[code.language];
+      const files = glob.sync(`${this.templatePath(code.language)}/*test.*`);
+      if (files.length) {
+        const templatePath = files[0];
+        const filename = /.+\/(.+)\..+$/.exec(templatePath)[1];
+        this.fs.copyTpl(
+          templatePath,
+          this.destinationPath(path.join(destinationPath, code.language, `${filename}.${suffix}`)),
+          { problemName: alias },
+        );
+      }
+    });
   }
 }

@@ -5,6 +5,13 @@ module.exports = {
         resourceQuery: /raw/,
         type: 'asset/source',
       },
+      {
+        resourceQuery: /file/,
+        type: 'asset/resource',
+        generator: {
+          filename: '[file]',
+        },
+      },
     ],
   },
 };

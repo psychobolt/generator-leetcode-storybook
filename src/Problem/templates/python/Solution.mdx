@@ -1,0 +1,50 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
+import solution from '<%= solutionPath %>?file';
+import code from '<%= solutionPath %>?raw';
+import json from '../testCases.json?file';
+import testCases from './testCases.py?file';
+
+export const c0 = 'cases[0]';
+
+<Meta title="<%= titlePath %>" />
+
+# Solution
+
+Modify the solution file `<%= solutionPath %>` to test results.
+
+## Default Case
+
+<Canvas withSource="open">
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }} inline={false} height="130px">
+    <py-env>
+    {`
+      - paths:
+        - ${json}
+        - ${testCases}
+        - ${solution}
+    `}
+    </py-env>
+    <div>
+      <div>Input: </div>
+      <py-script>
+      {`
+        from testCases import cases
+        print(${c0}['input'])
+      `}
+      </py-script>
+    </div>
+    <br />
+    <div>
+      <div>Output: </div>
+      <py-script>
+      {`
+        from testCases import cases, runTestCase
+        from <%= problemName %> import Solution
+        solution = Solution()
+        print(runTestCase(solution.<%= problemName %>, ${c0}))
+      `}
+      </py-script>
+    </div>
+  </Story>
+</Canvas>

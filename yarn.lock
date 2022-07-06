@@ -11987,6 +11987,7 @@ __metadata:
     markdown-to-jsx: 7.1.7
     react: 18.2.0
     react-dom: 18.2.0
+    react-syntax-highlighter: 15.5.0
     require-from-string: 2.0.2
     rimraf: 3.0.2
     slash: 4.0.0
@@ -19299,7 +19300,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-syntax-highlighter@npm:^15.4.5":
+"react-syntax-highlighter@npm:15.5.0, react-syntax-highlighter@npm:^15.4.5":
   version: 15.5.0
   resolution: "react-syntax-highlighter@npm:15.5.0"
   dependencies:

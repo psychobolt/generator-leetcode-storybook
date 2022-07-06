@@ -1,28 +1,15 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs';
-import solution from '<%= solutionPath %>';
-import code from '<%= solutionPath %>?raw';
-import runTestCase, { cases } from './testCases.js';
 
-export const c0 = cases[0];
+import code from '<%= solutionPath %>?raw';
 
 <Meta title="<%= titlePath %>" />
 
 # Solution
 
-Modify the solution file `<%= solutionPath %>` to test results.
-
-## Default Case
+See source file `<%= solutionPath %>`
 
 <Canvas withSource="open">
-  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
-    <div>
-      <div>Input: </div>
-      <div>{JSON.stringify(c0.input)}</div>
-    </div>
-    <br />
-    <div>
-      <div>Output: </div>
-      <div>{JSON.stringify(runTestCase(solution, c0))}</div>
-    </div>
+  <Story name="Source" parameters={{ docs: { source: { code } } }}>
+    <div>Case execution is unsupported for this language. Please test the solution in your local dev environment.</div>
   </Story>
 </Canvas>
