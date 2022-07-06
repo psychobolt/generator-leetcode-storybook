@@ -191,7 +191,7 @@ export default class Problem extends Generator {
       const files = glob.sync(`${this.templatePath(code.language)}/*test.*`);
       if (files.length) {
         const templatePath = files[0];
-        const filename = /.+\/(.+)\..+$/.exec(templatePath)[1];
+        const filename = /.+\/(.+)\..+$/.exec(templatePath)[1].replace('solution', name);
         this.fs.copyTpl(
           templatePath,
           this.destinationPath(path.join(destinationPath, code.language, `${filename}.${suffix}`)),
