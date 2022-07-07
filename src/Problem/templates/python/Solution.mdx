@@ -40,9 +40,9 @@ Modify the solution file `<%= solutionPath %>` to test results.
       <py-script>
       {`
         from testCases import cases, runTestCase
-        from <%= problemName %> import Solution
+        from <%= problemAlias %> import Solution
         solution = Solution()
-        print(runTestCase(solution.<%= problemName %>, ${c0}))
+        print(runTestCase(solution.<%= problemAlias %>, ${c0}))
       `}
       </py-script>
     </div>

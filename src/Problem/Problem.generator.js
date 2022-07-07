@@ -95,7 +95,7 @@ export default class Problem extends Generator {
     // See https://github.com/LeetCode-OpenSource/vscode-leetcode/blob/de1dc4161b497b4f76faad2363abab0104a75373/src/webview/leetCodePreviewProvider.ts#L48
     this.fs.copyTpl(
       this.templatePath('Problem.md'),
-      this.destinationPath(path.join(destinationPath, `${name}.md`)),
+      path.join(destinationPath, `${name}.md`),
       {
         ...problem,
         ...metadata,
@@ -104,7 +104,7 @@ export default class Problem extends Generator {
 
     this.fs.copyTpl(
       this.templatePath('Problem.mdx'),
-      this.destinationPath(path.join(destinationPath, `${name}.problem.mdx`)),
+      path.join(destinationPath, `${name}.problem.mdx`),
       {
         titlePath,
         problemPath,
@@ -114,7 +114,7 @@ export default class Problem extends Generator {
 
     this.fs.copyTpl(
       this.templatePath('javascript', 'Solution.mdx'),
-      this.destinationPath(path.join(destinationPath, 'javascript', `${name}.solution.mdx`)),
+      path.join(destinationPath, 'javascript', `${name}.solution.mdx`),
       {
         titlePath: titlePath.concat('/Solution/Javascript'),
         solutionPath: solutionPath(),
@@ -126,10 +126,10 @@ export default class Problem extends Generator {
       const templatePath = this.templatePath(code.language, 'Solution.mdx');
       this.fs.copyTpl(
         fs.existsSync(templatePath) ? templatePath : this.templatePath('Solution.mdx'),
-        this.destinationPath(path.join(destinationPath, code.language, `${name}.solution.mdx`)),
+        path.join(destinationPath, code.language, `${name}.solution.mdx`),
         {
           titlePath: titlePath.concat('/Solution', `/${code.language.charAt(0).toUpperCase() + code.language.slice(1)}`),
-          problemName: alias,
+          problemAlias: alias,
           solutionPath: solutionPath(suffix),
         },
       );
@@ -137,7 +137,7 @@ export default class Problem extends Generator {
 
     this.fs.copyTpl(
       this.templatePath('solution.ejs'),
-      this.destinationPath(path.join(this.destinationRoot(), relativePath, 'javascript', solutionPath())),
+      path.join(destinationPath, 'javascript', solutionPath()),
       { source },
     );
 
@@ -146,8 +146,7 @@ export default class Problem extends Generator {
         this.templatePath('solution.ejs'),
         this.destinationPath(
           path.join(
-            this.destinationRoot(),
-            relativePath,
+            destinationPath,
             code.language,
             solutionPath(resolver.LANGUAGE_MAP[code.language]),
           ),
@@ -158,12 +157,12 @@ export default class Problem extends Generator {
 
     this.fs.copy(
       this.templatePath('testCases.json'),
-      this.destinationPath(path.join(destinationPath, 'testCases.json')),
+      path.join(destinationPath, 'testCases.json'),
     );
 
     this.fs.copy(
       this.templatePath('javascript', 'testCases.js'),
-      this.destinationPath(path.join(destinationPath, 'javascript', 'testCases.js')),
+      path.join(destinationPath, 'javascript', 'testCases.js'),
     );
 
     codeList.forEach(code => {
@@ -172,14 +171,14 @@ export default class Problem extends Generator {
       if (fs.existsSync(templatePath)) {
         this.fs.copyTpl(
           templatePath,
-          this.destinationPath(path.join(destinationPath, code.language, `testCases.${suffix}`)),
+          path.join(destinationPath, code.language, `testCases.${suffix}`),
         );
       }
     });
 
     this.fs.copyTpl(
       this.templatePath('javascript', 'problem.test.js'),
-      this.destinationPath(path.join(destinationPath, 'javascript', `${alias}.test.js`)),
+      path.join(destinationPath, 'javascript', `${alias}.test.js`),
       {
         solutionPath: solutionPath(),
         titlePath,
@@ -194,9 +193,19 @@ export default class Problem extends Generator {
         const filename = /.+\/(.+)\..+$/.exec(templatePath)[1].replace('solution', name);
         this.fs.copyTpl(
           templatePath,
-          this.destinationPath(path.join(destinationPath, code.language, `${filename}.${suffix}`)),
-          { problemName: alias },
+          path.join(destinationPath, code.language, `${filename}.${suffix}`),
+          {
+            problemName: name,
+            problemAlias: alias,
+          },
         );
+      }
+    });
+
+    codeList.forEach(code => {
+      if (code.language === 'python') {
+        this.fs.write(path.join(destinationPath, '__init__.py'), '');
+        this.fs.write(path.join(destinationPath, code.language, '__init__.py'), '');
       }
     });
   }
