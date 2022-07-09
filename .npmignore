@@ -8,6 +8,7 @@ shared
 storybook-static
 __tests__
 tmp
+.babelrc.json
 .c8rc.json
 .eslintignore
 .eslintrc.cjs
