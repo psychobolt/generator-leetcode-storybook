@@ -187,7 +187,7 @@ export default class Problem extends Generator {
 
     codeList.forEach(code => {
       const suffix = resolver.LANGUAGE_MAP[code.language];
-      const files = glob.sync(`${this.templatePath(code.language)}/*test.*`);
+      const files = glob.sync(slash(`${this.templatePath(code.language)}/*test.*`));
       if (files.length) {
         const templatePath = files[0];
         const filename = /.+\/(.+)\..+$/.exec(templatePath)[1].replace('solution', name);
