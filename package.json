@@ -105,7 +105,7 @@
     "yeoman-test": "6.3.0",
     "yo": "4.3.0"
   },
-  "packageManager": "yarn@3.2.1",
+  "packageManager": "yarn@3.2.2",
   "peerDependencies": {
     "vsc-leetcode-cli": "*"
   }
