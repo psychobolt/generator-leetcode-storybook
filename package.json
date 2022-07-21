@@ -73,7 +73,7 @@
     "@storybook/react": "6.5.9",
     "@storybook/testing-library": "0.0.13",
     "@storybook/theming": "6.5.9",
-    "@yarnpkg/core": "3.2.2",
+    "@yarnpkg/core": "3.2.3",
     "@yarnpkg/sdks": "3.0.0-rc.12",
     "app-root-path": "3.0.0",
     "babel-loader": "8.2.5",
