@@ -40,7 +40,7 @@ export default class Problem extends Generator {
         name: 'id',
         message: 'Enter the problem ID',
         validate: validator.id,
-        when: !this.options.cache || !this.options.problemId,
+        when: !(this.options.cache || this.options.problemId),
       },
     ]);
     const { languages = this.options.languages } = await this.prompt([
