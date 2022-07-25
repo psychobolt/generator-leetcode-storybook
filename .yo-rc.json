@@ -2,7 +2,7 @@
   "generator-leetcode-storybook": {
     "problem": {
       "$1": {
-        "path": "Problems",
+        "path": "Problems/Easy",
         "languages": [
           "javascript",
           "python",

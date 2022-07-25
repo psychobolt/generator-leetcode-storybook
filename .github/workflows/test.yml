@@ -62,7 +62,7 @@ jobs:
         shell: bash
       - run: mkdir tmp
         shell: bash
-      - run: yarn start --storiesDir ./tmp --problemId 1 --languages javascript,python,ruby --path Problems --cache ./src/Problem/__tests__/1.two-sum.algorithms.json
+      - run: yarn start --storiesDir ./tmp --problemId 1 --languages javascript,python,ruby --path Problems/Easy --cache ./src/Problem/__tests__/1.two-sum.algorithms.json
         shell: bash
       - run: yarn build-storybook
         shell: bash

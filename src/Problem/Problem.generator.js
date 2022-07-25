@@ -67,14 +67,15 @@ export default class Problem extends Generator {
   }
 
   configuring() {
+    const id = `$${this.problemId}`;
     this.config.merge({
       problem: {
-        [`$${this.problemId}`]: {
+        [id]: {
           path: this.pathInput,
-          languages: this.languages,
         },
       },
     });
+    this.config.setPath(`problem.${id}.languages`, this.languages);
     this.config.save();
   }
 

@@ -61,8 +61,7 @@ export default class Main extends Generator {
   }
 
   async install() {
-    const devDependencies = this.packageJson.get('devDependencies');
-    const semver = devDependencies && devDependencies['@storybook/react'];
+    const semver = this._getDevPkgSemver('@storybook/react');
     if (semver) {
       this.addDevDependencies({
         '@storybook/addons': semver,
@@ -70,11 +69,17 @@ export default class Main extends Generator {
         '@storybook/api': semver,
         '@storybook/components': semver,
         '@storybook/theming': semver,
-        '@geometricpanda/storybook-addon-badges': '0.2.1',
-        'markdown-to-jsx': '7.1.7',
+        '@geometricpanda/storybook-addon-badges': this._getDevPkgSemver('@geometricpanda/storybook-addon-badges', '0.2.2'),
+        lodash: this._getDevPkgSemver('lodash', '4.17.21'),
+        'markdown-to-jsx': this._getDevPkgSemver('markdown-to-jsx', '7.1.7'),
       });
     } else {
       this.log('No React Storybook configured. Please install React and run "sb init" on your project.');
     }
+  }
+
+  _getDevPkgSemver(pkg, fallbackSemver = null) {
+    const devDependencies = this.packageJson.get('devDependencies') || {};
+    return devDependencies[pkg] || fallbackSemver;
   }
 }
