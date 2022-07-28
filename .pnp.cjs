@@ -86,7 +86,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:26.6.0"],\
             ["espree", "npm:9.3.2"],\
             ["execa", "npm:6.1.0"],\
-            ["flow-bin", "npm:0.175.1"],\
+            ["flow-bin", "npm:0.183.1"],\
             ["flow-typed", "npm:3.8.0"],\
             ["glob", "npm:8.0.3"],\
             ["isbinaryfile", "npm:5.0.0"],\
@@ -16479,10 +16479,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["flow-bin", [\
-        ["npm:0.175.1", {\
-          "packageLocation": "./.yarn/unplugged/flow-bin-npm-0.175.1-2cc0b0ebd9/node_modules/flow-bin/",\
+        ["npm:0.183.1", {\
+          "packageLocation": "./.yarn/unplugged/flow-bin-npm-0.183.1-18b285d18d/node_modules/flow-bin/",\
           "packageDependencies": [\
-            ["flow-bin", "npm:0.175.1"]\
+            ["flow-bin", "npm:0.183.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -17034,7 +17034,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:26.6.0"],\
             ["espree", "npm:9.3.2"],\
             ["execa", "npm:6.1.0"],\
-            ["flow-bin", "npm:0.175.1"],\
+            ["flow-bin", "npm:0.183.1"],\
             ["flow-typed", "npm:3.8.0"],\
             ["glob", "npm:8.0.3"],\
             ["isbinaryfile", "npm:5.0.0"],\
