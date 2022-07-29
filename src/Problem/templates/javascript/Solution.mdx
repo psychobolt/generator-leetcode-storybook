@@ -1,3 +1,4 @@
+import cloneDeep from 'lodash/fp/cloneDeep.js';
 import { Meta, Story, Canvas } from '@storybook/addon-docs';
 
 import solution from '<%= solutionPath %>';
@@ -5,6 +6,7 @@ import code from '<%= solutionPath %>?raw';
 import runTestCase, { cases } from './testCases.js';
 
 export const c0 = cases[0];
+export const testCase = cloneDeep(c0);
 
 <Meta title="<%= titlePath %>" />
 
@@ -23,7 +25,7 @@ Modify the solution file `<%= solutionPath %>` to test results.
     <br />
     <div>
       <div>Output: </div>
-      <div>{JSON.stringify(runTestCase(solution, c0))}</div>
+      <div>{JSON.stringify(runTestCase(solution, testCase))}</div>
     </div>
   </Story>
 </Canvas>

@@ -1,4 +1,3 @@
-from copy import deepcopy
 import json
 
 try:
@@ -11,4 +10,4 @@ cases = json.load(data)
 
 
 def runTestCase(runSolution, testCase):
-    return runSolution(deepcopy(testCase['input']))
+    return runSolution(testCase['input'])
