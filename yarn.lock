@@ -3449,7 +3449,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/expect@npm:^28.1.3":
+"@jest/expect@npm:^28.0.2, @jest/expect@npm:^28.1.3":
   version: 28.1.3
   resolution: "@jest/expect@npm:28.1.3"
   dependencies:
@@ -12391,7 +12391,7 @@ __metadata:
     isbinaryfile: 5.0.0
     jest: 28.1.3
     jest-cli: 28.1.3
-    jest-light-runner: 0.2.0
+    jest-light-runner: 0.2.2
     jest-specific-snapshot: 5.0.0
     json5: 2.2.1
     lodash: 4.17.21
@@ -14976,11 +14976,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-light-runner@npm:0.2.0":
-  version: 0.2.0
-  resolution: "jest-light-runner@npm:0.2.0"
+"jest-light-runner@npm:0.2.2":
+  version: 0.2.2
+  resolution: "jest-light-runner@npm:0.2.2"
   dependencies:
-    expect: ^28.0.1
+    "@jest/expect": ^28.0.2
     jest-circus: ^28.0.0
     jest-each: ^28.0.0
     jest-mock: ^28.0.0
@@ -14989,7 +14989,7 @@ __metadata:
     supports-color: ^9.2.1
   peerDependencies:
     jest: ^27.0.0 || ^28.0.0
-  checksum: 5f662c2202ac271a787839db0f13e70029003d82d3ed6ce4695b8e7d69b33bfd2b916295f5e3ea07ba4359f0fb1773b6e55562477416874454e52b8fa8941fae
+  checksum: cf837fc1fbd1bb370dcf93f346d500118ba53b968594a36752cd67c1e57c0262334897919ccd188943b13b4262e5194502de5eca20c79c76f33c4ccabb01dd00
   languageName: node
   linkType: hard
 
