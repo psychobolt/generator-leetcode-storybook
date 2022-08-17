@@ -9,7 +9,7 @@ import runTestCase, { cases } from './testCases.js';
 export const c0 = cases[0];
 export const printOutput = memoize(() => JSON.stringify(runTestCase(solution, cloneDeep(c0))));
 
-<Meta title="<%= titlePath %>" />
+<Meta title="<%- titlePath %>" />
 
 # Solution
 
@@ -21,12 +21,12 @@ Modify the solution file `<%= solutionPath %>` to test results.
   <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
     <div>
       <div>Input: </div>
-      <div>{JSON.stringify(c0.input)}</div>
+      <pre>{JSON.stringify(c0.input)}</pre>
     </div>
     <br />
     <div>
       <div>Output: </div>
-      <div>{printOutput()}</div>
+      <pre>{printOutput()}</pre>
     </div>
   </Story>
 </Canvas>

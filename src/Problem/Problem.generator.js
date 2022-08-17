@@ -182,7 +182,7 @@ export default class Problem extends Generator {
       path.join(destinationPath, 'javascript', `${alias}.test.js`),
       {
         solutionPath: solutionPath(),
-        titlePath,
+        titlePath: titlePath.replace(/'/, '\\\''),
       },
     );
 

@@ -1,4 +1,4 @@
-# [<%= title %>](<%= url %>)
+# [<%- title %>](<%= url %>)
 
 | Category | Difficulty | Likes | Dislikes |
 | :------: | :--------: | :---: | :------: |

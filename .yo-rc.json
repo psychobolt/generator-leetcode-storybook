@@ -8,6 +8,12 @@
           "python",
           "ruby"
         ]
+      },
+      "$118": {
+        "path": "Problems/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }

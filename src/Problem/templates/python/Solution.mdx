@@ -7,7 +7,7 @@ import testCases from './testCases.py?file';
 
 export const c0 = 'cases[0]';
 
-<Meta title="<%= titlePath %>" />
+<Meta title="<%- titlePath %>" />
 
 # Solution
 
@@ -16,7 +16,7 @@ Modify the solution file `<%= solutionPath %>` to test results.
 ## Default Case
 
 <Canvas withSource="open">
-  <Story name="Case 0" parameters={{ docs: { source: { code } } }} inline={false} height="130px">
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }} inline={false} height="200px">
     <py-env>
     {`
       - paths:
@@ -27,24 +27,28 @@ Modify the solution file `<%= solutionPath %>` to test results.
     </py-env>
     <div>
       <div>Input: </div>
-      <py-script>
-      {`
-        from testCases import cases
-        print(${c0}['input'])
-      `}
-      </py-script>
+      <pre>
+        <py-script>
+        {`
+          from testCases import cases
+          print(${c0}['input'])
+        `}
+        </py-script>
+      </pre>
     </div>
     <br />
     <div>
       <div>Output: </div>
-      <py-script>
-      {`
-        from testCases import cases, runTestCase
-        from <%= problemAlias %> import Solution
-        solution = Solution()
-        print(runTestCase(solution.<%= problemAlias %>, ${c0}))
-      `}
-      </py-script>
+      <pre>
+        <py-script>
+        {`
+          from testCases import cases, runTestCase
+          from <%= problemAlias %> import Solution
+          solution = Solution()
+          print(runTestCase(solution.<%= problemAlias %>, ${c0}))
+        `}
+        </py-script>
+      </pre>
     </div>
   </Story>
 </Canvas>
