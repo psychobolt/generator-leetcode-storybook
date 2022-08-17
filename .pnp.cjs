@@ -72,7 +72,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/theming", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:6.5.10"],\
             ["@yarnpkg/core", "npm:3.2.3"],\
             ["@yarnpkg/sdks", "npm:3.0.0-rc.14"],\
-            ["app-root-path", "npm:3.0.0"],\
+            ["app-root-path", "npm:3.1.0"],\
             ["babel-loader", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:8.2.5"],\
             ["babel-plugin-macros", "npm:3.1.0"],\
             ["babel-plugin-named-exports-order", "npm:0.0.2"],\
@@ -11202,10 +11202,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["app-root-path", [\
-        ["npm:3.0.0", {\
-          "packageLocation": "./.yarn/cache/app-root-path-npm-3.0.0-029bfcbe5f-ff91a24db2.zip/node_modules/app-root-path/",\
+        ["npm:3.1.0", {\
+          "packageLocation": "./.yarn/cache/app-root-path-npm-3.1.0-9822bb2a96-e3db3957ae.zip/node_modules/app-root-path/",\
           "packageDependencies": [\
-            ["app-root-path", "npm:3.0.0"]\
+            ["app-root-path", "npm:3.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -17148,7 +17148,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/theming", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:6.5.10"],\
             ["@yarnpkg/core", "npm:3.2.3"],\
             ["@yarnpkg/sdks", "npm:3.0.0-rc.14"],\
-            ["app-root-path", "npm:3.0.0"],\
+            ["app-root-path", "npm:3.1.0"],\
             ["babel-loader", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:8.2.5"],\
             ["babel-plugin-macros", "npm:3.1.0"],\
             ["babel-plugin-named-exports-order", "npm:0.0.2"],\
