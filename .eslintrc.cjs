@@ -26,6 +26,7 @@ module.exports = {
         'func-names': ['error', 'as-needed'],
         'no-param-reassign': 0,
         'no-var': 0,
+        'prefer-arrow-callback': 0,
         'prefer-destructuring': 0,
         'prefer-template': 0,
       },
