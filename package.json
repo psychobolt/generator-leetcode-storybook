@@ -73,8 +73,8 @@
     "@storybook/react": "6.5.10",
     "@storybook/testing-library": "0.0.13",
     "@storybook/theming": "6.5.10",
-    "@yarnpkg/core": "3.2.4",
-    "@yarnpkg/sdks": "3.0.0-rc.18",
+    "@yarnpkg/core": "3.3.0",
+    "@yarnpkg/sdks": "3.0.0-rc.30",
     "app-root-path": "3.1.0",
     "babel-loader": "8.2.5",
     "babel-plugin-macros": "3.1.0",
@@ -108,7 +108,7 @@
     "yeoman-test": "6.3.0",
     "yo": "4.3.0"
   },
-  "packageManager": "yarn@3.2.3",
+  "packageManager": "yarn@3.3.0",
   "peerDependencies": {
     "vsc-leetcode-cli": "*"
   }
