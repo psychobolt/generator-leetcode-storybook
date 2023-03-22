@@ -101,7 +101,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["symlink-dir", "npm:5.0.1"],\
             ["to-absolute-glob", "https://github.com/psychobolt/to-absolute-glob.git#commit=8583eea2b8791b92050a7bee00db808c5438cad1"],\
             ["vsc-leetcode-cli", "npm:2.8.1"],\
-            ["webpack", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.74.0"],\
+            ["webpack", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.76.3"],\
             ["yeoman-environment", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:3.10.0"],\
             ["yeoman-generator", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.7.0"],\
             ["yeoman-test", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:6.3.0"],\
@@ -7368,7 +7368,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sveltedoc-parser", null],\
             ["ts-dedent", "npm:2.2.0"],\
             ["vue", null],\
-            ["webpack", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.74.0"]\
+            ["webpack", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.76.3"]\
           ],\
           "packagePeers": [\
             "@babel/core",\
@@ -11834,7 +11834,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["loader-utils", "npm:2.0.2"],\
             ["make-dir", "npm:3.1.0"],\
             ["schema-utils", "npm:2.7.1"],\
-            ["webpack", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.74.0"]\
+            ["webpack", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.76.3"]\
           ],\
           "packagePeers": [\
             "@babel/core",\
@@ -17327,7 +17327,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["symlink-dir", "npm:5.0.1"],\
             ["to-absolute-glob", "https://github.com/psychobolt/to-absolute-glob.git#commit=8583eea2b8791b92050a7bee00db808c5438cad1"],\
             ["vsc-leetcode-cli", "npm:2.8.1"],\
-            ["webpack", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.74.0"],\
+            ["webpack", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.76.3"],\
             ["yeoman-environment", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:3.10.0"],\
             ["yeoman-generator", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.7.0"],\
             ["yeoman-test", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:6.3.0"],\
@@ -28052,36 +28052,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:1a538641ce9bd51bdf073dac695f72540af943cd64b9be63c7e872a193c8ed43331db3c31868182df4b4225eaafe0908a725709f54c694b623204e44a026c073#npm:5.3.1", {\
-          "packageLocation": "./.yarn/__virtual__/terser-webpack-plugin-virtual-20a0d73693/0/cache/terser-webpack-plugin-npm-5.3.1-0c0596f996-1b808fd4f5.zip/node_modules/terser-webpack-plugin/",\
-          "packageDependencies": [\
-            ["terser-webpack-plugin", "virtual:1a538641ce9bd51bdf073dac695f72540af943cd64b9be63c7e872a193c8ed43331db3c31868182df4b4225eaafe0908a725709f54c694b623204e44a026c073#npm:5.3.1"],\
-            ["@swc/core", null],\
-            ["@types/esbuild", null],\
-            ["@types/swc__core", null],\
-            ["@types/uglify-js", null],\
-            ["@types/webpack", null],\
-            ["esbuild", null],\
-            ["jest-worker", "npm:27.5.1"],\
-            ["schema-utils", "npm:3.1.1"],\
-            ["serialize-javascript", "npm:6.0.0"],\
-            ["source-map", "npm:0.6.1"],\
-            ["terser", "npm:5.13.0"],\
-            ["uglify-js", null],\
-            ["webpack", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.74.0"]\
-          ],\
-          "packagePeers": [\
-            "@swc/core",\
-            "@types/esbuild",\
-            "@types/swc__core",\
-            "@types/uglify-js",\
-            "@types/webpack",\
-            "esbuild",\
-            "uglify-js",\
-            "webpack"\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["virtual:4b59b982382d36af15e9e095bbe6b038ea400f400ea5404fdd6af7482b5d6ba8c8795bd58ac4c80f17f276d9e00edbab88ca78b5af69f5b47f0109f508925e0d#npm:5.3.1", {\
           "packageLocation": "./.yarn/__virtual__/terser-webpack-plugin-virtual-0b841efd94/0/cache/terser-webpack-plugin-npm-5.3.1-0c0596f996-1b808fd4f5.zip/node_modules/terser-webpack-plugin/",\
           "packageDependencies": [\
@@ -28130,6 +28100,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "packagePeers": [\
             "@types/webpack",\
+            "webpack"\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["virtual:b545f241c2cfe1ae083d121bd4eaf2f24dfa809fd8deedf80f05b351b69e1a4efd78f4c91b3ebebed805995354e072b1da992ec1d5312084f808639df894b74a#npm:5.3.1", {\
+          "packageLocation": "./.yarn/__virtual__/terser-webpack-plugin-virtual-9108c5feb7/0/cache/terser-webpack-plugin-npm-5.3.1-0c0596f996-1b808fd4f5.zip/node_modules/terser-webpack-plugin/",\
+          "packageDependencies": [\
+            ["terser-webpack-plugin", "virtual:b545f241c2cfe1ae083d121bd4eaf2f24dfa809fd8deedf80f05b351b69e1a4efd78f4c91b3ebebed805995354e072b1da992ec1d5312084f808639df894b74a#npm:5.3.1"],\
+            ["@swc/core", null],\
+            ["@types/esbuild", null],\
+            ["@types/swc__core", null],\
+            ["@types/uglify-js", null],\
+            ["@types/webpack", null],\
+            ["esbuild", null],\
+            ["jest-worker", "npm:27.5.1"],\
+            ["schema-utils", "npm:3.1.1"],\
+            ["serialize-javascript", "npm:6.0.0"],\
+            ["source-map", "npm:0.6.1"],\
+            ["terser", "npm:5.13.0"],\
+            ["uglify-js", null],\
+            ["webpack", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.76.3"]\
+          ],\
+          "packagePeers": [\
+            "@swc/core",\
+            "@types/esbuild",\
+            "@types/swc__core",\
+            "@types/uglify-js",\
+            "@types/webpack",\
+            "esbuild",\
+            "uglify-js",\
             "webpack"\
           ],\
           "linkType": "HARD"\
@@ -29613,10 +29613,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["npm:5.74.0", {\
-          "packageLocation": "./.yarn/cache/webpack-npm-5.74.0-f5b838a00d-320c41369a.zip/node_modules/webpack/",\
+        ["npm:5.76.3", {\
+          "packageLocation": "./.yarn/cache/webpack-npm-5.76.3-f5ec1219a3-363f536b56.zip/node_modules/webpack/",\
           "packageDependencies": [\
-            ["webpack", "npm:5.74.0"]\
+            ["webpack", "npm:5.76.3"]\
           ],\
           "linkType": "SOFT"\
         }],\
@@ -29657,10 +29657,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.74.0", {\
-          "packageLocation": "./.yarn/__virtual__/webpack-virtual-1a538641ce/0/cache/webpack-npm-5.74.0-f5b838a00d-320c41369a.zip/node_modules/webpack/",\
+        ["virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.76.3", {\
+          "packageLocation": "./.yarn/__virtual__/webpack-virtual-b545f241c2/0/cache/webpack-npm-5.76.3-f5ec1219a3-363f536b56.zip/node_modules/webpack/",\
           "packageDependencies": [\
-            ["webpack", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.74.0"],\
+            ["webpack", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.76.3"],\
             ["@types/eslint-scope", "npm:3.7.3"],\
             ["@types/estree", "npm:0.0.51"],\
             ["@types/webpack-cli", null],\
@@ -29683,7 +29683,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["neo-async", "npm:2.6.2"],\
             ["schema-utils", "npm:3.1.1"],\
             ["tapable", "npm:2.2.1"],\
-            ["terser-webpack-plugin", "virtual:1a538641ce9bd51bdf073dac695f72540af943cd64b9be63c7e872a193c8ed43331db3c31868182df4b4225eaafe0908a725709f54c694b623204e44a026c073#npm:5.3.1"],\
+            ["terser-webpack-plugin", "virtual:b545f241c2cfe1ae083d121bd4eaf2f24dfa809fd8deedf80f05b351b69e1a4efd78f4c91b3ebebed805995354e072b1da992ec1d5312084f808639df894b74a#npm:5.3.1"],\
             ["watchpack", "npm:2.4.0"],\
             ["webpack-cli", null],\
             ["webpack-sources", "npm:3.2.3"]\
