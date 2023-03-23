@@ -25,7 +25,7 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "espree": "9.3.3",
+    "espree": "9.5.0",
     "execa": "6.1.0",
     "glob": "8.0.3",
     "isbinaryfile": "5.0.0",
