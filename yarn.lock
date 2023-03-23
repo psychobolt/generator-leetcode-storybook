@@ -13147,7 +13147,7 @@ __metadata:
     vsc-leetcode-cli: 2.8.1
     webpack: 5.76.3
     yeoman-environment: 3.15.1
-    yeoman-generator: 5.7.0
+    yeoman-generator: 5.8.0
     yeoman-test: 6.3.0
     yo: 4.3.1
   peerDependencies:
@@ -25003,9 +25003,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-generator@npm:5.7.0":
-  version: 5.7.0
-  resolution: "yeoman-generator@npm:5.7.0"
+"yeoman-generator@npm:5.8.0":
+  version: 5.8.0
+  resolution: "yeoman-generator@npm:5.8.0"
   dependencies:
     chalk: ^4.1.0
     dargs: ^7.0.0
@@ -25013,6 +25013,7 @@ __metadata:
     execa: ^5.1.1
     github-username: ^6.0.0
     lodash: ^4.17.11
+    mem-fs-editor: ^9.0.0
     minimist: ^1.2.5
     read-pkg-up: ^7.0.1
     run-async: ^2.0.0
@@ -25025,7 +25026,7 @@ __metadata:
   peerDependenciesMeta:
     yeoman-environment:
       optional: true
-  checksum: 16b779372d89e2bff2b10d73c942f7b30a08ba92f329d1a1f0e485810d2ee1f8aa59ff454bd5398042ec8e6fdc7db89f8dd98040b42f6a92a2eaca579bca1a3f
+  checksum: dd9fbbfca7c37cc002c794b897a92b4c83b3019b662896d92a12671823a1ad7f04da2c0d1b14c85afdabf691a2f38630afc08f5250de29ab1a5cadd6e792ad41
   languageName: node
   linkType: hard
 
