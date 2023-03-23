@@ -13146,7 +13146,7 @@ __metadata:
     to-absolute-glob: "https://github.com/psychobolt/to-absolute-glob"
     vsc-leetcode-cli: 2.8.1
     webpack: 5.76.3
-    yeoman-environment: 3.10.0
+    yeoman-environment: 3.15.1
     yeoman-generator: 5.7.0
     yeoman-test: 6.3.0
     yo: 4.3.1
@@ -24906,9 +24906,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-environment@npm:3.10.0":
-  version: 3.10.0
-  resolution: "yeoman-environment@npm:3.10.0"
+"yeoman-environment@npm:3.15.1":
+  version: 3.15.1
+  resolution: "yeoman-environment@npm:3.15.1"
   dependencies:
     "@npmcli/arborist": ^4.0.4
     are-we-there-yet: ^2.0.0
@@ -24951,7 +24951,7 @@ __metadata:
     mem-fs-editor: ^8.1.2 || ^9.0.0
   bin:
     yoe: cli/index.js
-  checksum: 2ab844358d148889285fc9cd68b9eb6660af4721033c86f833ad60a0028bbe8b5c637fa290a1c29f54c4957df53e6c5cd05692c6e25e7d88c9442c9a5f9775dc
+  checksum: 7ea7bb0a210f2e0702f54420916075cda329ee2b71243fb911af9bcfc1e59a934daef1027dd9e95a410f5dae1eeb1fcdb85f4c697a0429477a3a50d2e48d0d58
   languageName: node
   linkType: hard
 
