@@ -91,7 +91,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-specific-snapshot", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.0.0"],\
             ["json5", "npm:2.2.3"],\
             ["lodash", "npm:4.17.21"],\
-            ["markdown-to-jsx", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:7.1.7"],\
+            ["markdown-to-jsx", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:7.2.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:18.2.0"],\
             ["react-syntax-highlighter", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:15.5.0"],\
@@ -17914,7 +17914,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-specific-snapshot", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.0.0"],\
             ["json5", "npm:2.2.3"],\
             ["lodash", "npm:4.17.21"],\
-            ["markdown-to-jsx", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:7.1.7"],\
+            ["markdown-to-jsx", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:7.2.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:18.2.0"],\
             ["react-syntax-highlighter", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:15.5.0"],\
@@ -22474,17 +22474,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["markdown-to-jsx", [\
-        ["npm:7.1.7", {\
-          "packageLocation": "./.yarn/cache/markdown-to-jsx-npm-7.1.7-2cb4f4a90f-b2c0ea7d09.zip/node_modules/markdown-to-jsx/",\
+        ["npm:7.2.0", {\
+          "packageLocation": "./.yarn/cache/markdown-to-jsx-npm-7.2.0-abe71d582b-ea417e684d.zip/node_modules/markdown-to-jsx/",\
           "packageDependencies": [\
-            ["markdown-to-jsx", "npm:7.1.7"]\
+            ["markdown-to-jsx", "npm:7.2.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:7.1.7", {\
-          "packageLocation": "./.yarn/__virtual__/markdown-to-jsx-virtual-36ede6d0fe/0/cache/markdown-to-jsx-npm-7.1.7-2cb4f4a90f-b2c0ea7d09.zip/node_modules/markdown-to-jsx/",\
+        ["virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:7.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/markdown-to-jsx-virtual-4d7973645a/0/cache/markdown-to-jsx-npm-7.2.0-abe71d582b-ea417e684d.zip/node_modules/markdown-to-jsx/",\
           "packageDependencies": [\
-            ["markdown-to-jsx", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:7.1.7"],\
+            ["markdown-to-jsx", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:7.2.0"],\
             ["@types/react", null],\
             ["react", "npm:18.2.0"]\
           ],\
