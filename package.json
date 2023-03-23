@@ -101,7 +101,7 @@
     "react-dom": "18.2.0",
     "react-syntax-highlighter": "15.5.0",
     "rimraf": "3.0.2",
-    "symlink-dir": "5.0.1",
+    "symlink-dir": "5.1.1",
     "vsc-leetcode-cli": "2.8.1",
     "webpack": "5.76.3",
     "yeoman-environment": "3.10.0",

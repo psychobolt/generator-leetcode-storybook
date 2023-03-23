@@ -98,7 +98,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["require-from-string", "npm:2.0.2"],\
             ["rimraf", "npm:3.0.2"],\
             ["slash", "npm:4.0.0"],\
-            ["symlink-dir", "npm:5.0.1"],\
+            ["symlink-dir", "npm:5.1.1"],\
             ["to-absolute-glob", "https://github.com/psychobolt/to-absolute-glob.git#commit=8583eea2b8791b92050a7bee00db808c5438cad1"],\
             ["vsc-leetcode-cli", "npm:2.8.1"],\
             ["webpack", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.76.3"],\
@@ -17664,6 +17664,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
+        ["npm:10.1.0", {\
+          "packageLocation": "./.yarn/cache/fs-extra-npm-10.1.0-86573680ed-dc94ab3709.zip/node_modules/fs-extra/",\
+          "packageDependencies": [\
+            ["fs-extra", "npm:10.1.0"],\
+            ["graceful-fs", "npm:4.2.9"],\
+            ["jsonfile", "npm:6.1.0"],\
+            ["universalify", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:8.1.0", {\
           "packageLocation": "./.yarn/cache/fs-extra-npm-8.1.0-197473387f-bf44f0e6ce.zip/node_modules/fs-extra/",\
           "packageDependencies": [\
@@ -17921,7 +17931,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["require-from-string", "npm:2.0.2"],\
             ["rimraf", "npm:3.0.2"],\
             ["slash", "npm:4.0.0"],\
-            ["symlink-dir", "npm:5.0.1"],\
+            ["symlink-dir", "npm:5.1.1"],\
             ["to-absolute-glob", "https://github.com/psychobolt/to-absolute-glob.git#commit=8583eea2b8791b92050a7bee00db808c5438cad1"],\
             ["vsc-leetcode-cli", "npm:2.8.1"],\
             ["webpack", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.76.3"],\
@@ -26692,11 +26702,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["rename-overwrite", [\
-        ["npm:4.0.2", {\
-          "packageLocation": "./.yarn/cache/rename-overwrite-npm-4.0.2-0f77e86b7a-9a6466a1b6.zip/node_modules/rename-overwrite/",\
+        ["npm:4.0.3", {\
+          "packageLocation": "./.yarn/cache/rename-overwrite-npm-4.0.3-52b95cc531-ac225a1b2e.zip/node_modules/rename-overwrite/",\
           "packageDependencies": [\
-            ["rename-overwrite", "npm:4.0.2"],\
-            ["@zkochan/rimraf", "npm:2.1.2"]\
+            ["rename-overwrite", "npm:4.0.3"],\
+            ["@zkochan/rimraf", "npm:2.1.2"],\
+            ["fs-extra", "npm:10.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -28633,12 +28644,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["symlink-dir", [\
-        ["npm:5.0.1", {\
-          "packageLocation": "./.yarn/cache/symlink-dir-npm-5.0.1-48278fde16-73694291cb.zip/node_modules/symlink-dir/",\
+        ["npm:5.1.1", {\
+          "packageLocation": "./.yarn/cache/symlink-dir-npm-5.1.1-c32cb414d0-9cff2d5dfa.zip/node_modules/symlink-dir/",\
           "packageDependencies": [\
-            ["symlink-dir", "npm:5.0.1"],\
+            ["symlink-dir", "npm:5.1.1"],\
             ["better-path-resolve", "npm:1.0.0"],\
-            ["rename-overwrite", "npm:4.0.2"]\
+            ["rename-overwrite", "npm:4.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
