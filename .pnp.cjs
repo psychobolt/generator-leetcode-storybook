@@ -80,7 +80,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-import", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:2.27.5"],\
             ["eslint-plugin-jest", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:27.2.1"],\
             ["espree", "npm:9.5.0"],\
-            ["execa", "npm:6.1.0"],\
+            ["execa", "npm:7.1.1"],\
             ["flow-bin", "npm:0.175.1"],\
             ["flow-typed", "npm:3.8.0"],\
             ["glob", "npm:8.1.0"],\
@@ -16451,13 +16451,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:6.1.0", {\
-          "packageLocation": "./.yarn/cache/execa-npm-6.1.0-be1d7f323b-1a4af79983.zip/node_modules/execa/",\
+        ["npm:7.1.1", {\
+          "packageLocation": "./.yarn/cache/execa-npm-7.1.1-a258daf7fc-21fa46fc69.zip/node_modules/execa/",\
           "packageDependencies": [\
-            ["execa", "npm:6.1.0"],\
+            ["execa", "npm:7.1.1"],\
             ["cross-spawn", "npm:7.0.3"],\
             ["get-stream", "npm:6.0.1"],\
-            ["human-signals", "npm:3.0.1"],\
+            ["human-signals", "npm:4.3.1"],\
             ["is-stream", "npm:3.0.0"],\
             ["merge-stream", "npm:2.0.0"],\
             ["npm-run-path", "npm:5.1.0"],\
@@ -17622,7 +17622,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-import", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:2.27.5"],\
             ["eslint-plugin-jest", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:27.2.1"],\
             ["espree", "npm:9.5.0"],\
-            ["execa", "npm:6.1.0"],\
+            ["execa", "npm:7.1.1"],\
             ["flow-bin", "npm:0.175.1"],\
             ["flow-typed", "npm:3.8.0"],\
             ["glob", "npm:8.1.0"],\
@@ -18819,10 +18819,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:3.0.1", {\
-          "packageLocation": "./.yarn/cache/human-signals-npm-3.0.1-0c557ca74a-f252a7769c.zip/node_modules/human-signals/",\
+        ["npm:4.3.1", {\
+          "packageLocation": "./.yarn/cache/human-signals-npm-4.3.1-d723001512-6f12958df3.zip/node_modules/human-signals/",\
           "packageDependencies": [\
-            ["human-signals", "npm:3.0.1"]\
+            ["human-signals", "npm:4.3.1"]\
           ],\
           "linkType": "HARD"\
         }]\
