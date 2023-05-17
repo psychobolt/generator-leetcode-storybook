@@ -11124,13 +11124,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enhanced-resolve@npm:^5.13.0":
-  version: 5.13.0
-  resolution: "enhanced-resolve@npm:5.13.0"
+"enhanced-resolve@npm:^5.14.0":
+  version: 5.14.0
+  resolution: "enhanced-resolve@npm:5.14.0"
   dependencies:
     graceful-fs: ^4.2.4
     tapable: ^2.2.0
-  checksum: 76d6844c4393d76beed5b3ce6cf5a98dee3ad5c84a9887f49ccde1224e3b7af201dfbd5a57ebf2b49f623b74883df262d50ff480d3cc02fc2881fc58b84e1bbe
+  checksum: fff1aaebbf376371e5df4502e111967f6247c37611ad3550e4e7fca657f6dcb29ef7ffe88bf14e5010b78997f1ddd984a8db97af87ee0a5477771398fd326f5b
   languageName: node
   linkType: hard
 
@@ -12877,7 +12877,7 @@ __metadata:
     symlink-dir: 5.1.1
     to-absolute-glob: "https://github.com/psychobolt/to-absolute-glob"
     vsc-leetcode-cli: 2.8.1
-    webpack: 5.81.0
+    webpack: 5.83.0
     yeoman-environment: 3.15.1
     yeoman-generator: 5.8.0
     yeoman-test: 6.3.0
@@ -23922,9 +23922,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:5.81.0":
-  version: 5.81.0
-  resolution: "webpack@npm:5.81.0"
+"webpack@npm:5.83.0":
+  version: 5.83.0
+  resolution: "webpack@npm:5.83.0"
   dependencies:
     "@types/eslint-scope": ^3.7.3
     "@types/estree": ^1.0.0
@@ -23935,7 +23935,7 @@ __metadata:
     acorn-import-assertions: ^1.7.6
     browserslist: ^4.14.5
     chrome-trace-event: ^1.0.2
-    enhanced-resolve: ^5.13.0
+    enhanced-resolve: ^5.14.0
     es-module-lexer: ^1.2.1
     eslint-scope: 5.1.1
     events: ^3.2.0
@@ -23955,7 +23955,7 @@ __metadata:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 1a6eecaffac3226d80f4e8f330b32e0ff117d9dafd8700166d230afbc171d68ea1ff55a9939fa789307f7b9d11881889ccb8e6cd79d4ccbaeef916788ce73fdb
+  checksum: cc611ab2db1fa60ec3f9b1aeb62998aafb8def4d3dd9b78d1314e01483d7e2dfafa66e1ba0aabc684164837713041c68a127994ae38eda42db933796fbb43067
   languageName: node
   linkType: hard
 
