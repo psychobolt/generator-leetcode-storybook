@@ -97,7 +97,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-syntax-highlighter", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:15.5.0"],\
             ["require-from-string", "npm:2.0.2"],\
             ["rimraf", "npm:5.0.1"],\
-            ["slash", "npm:5.0.1"],\
+            ["slash", "npm:5.1.0"],\
             ["symlink-dir", "npm:5.1.1"],\
             ["to-absolute-glob", "https://github.com/psychobolt/to-absolute-glob.git#commit=8583eea2b8791b92050a7bee00db808c5438cad1"],\
             ["vsc-leetcode-cli", "npm:2.8.1"],\
@@ -17505,7 +17505,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-syntax-highlighter", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:15.5.0"],\
             ["require-from-string", "npm:2.0.2"],\
             ["rimraf", "npm:5.0.1"],\
-            ["slash", "npm:5.0.1"],\
+            ["slash", "npm:5.1.0"],\
             ["symlink-dir", "npm:5.1.1"],\
             ["to-absolute-glob", "https://github.com/psychobolt/to-absolute-glob.git#commit=8583eea2b8791b92050a7bee00db808c5438cad1"],\
             ["vsc-leetcode-cli", "npm:2.8.1"],\
@@ -26942,10 +26942,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:5.0.1", {\
-          "packageLocation": "./.yarn/cache/slash-npm-5.0.1-f9de4366f8-c0f5262d80.zip/node_modules/slash/",\
+        ["npm:5.1.0", {\
+          "packageLocation": "./.yarn/cache/slash-npm-5.1.0-718a84282e-70434b34c5.zip/node_modules/slash/",\
           "packageDependencies": [\
-            ["slash", "npm:5.0.1"]\
+            ["slash", "npm:5.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
