@@ -72,7 +72,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-macros", "npm:3.1.0"],\
             ["babel-plugin-named-exports-order", "npm:0.0.2"],\
             ["babel-plugin-polyfill-corejs3", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:0.8.1"],\
-            ["c8", "npm:7.14.0"],\
+            ["c8", "npm:8.0.0"],\
             ["core-js", "npm:3.31.0"],\
             ["eslint", "npm:8.13.0"],\
             ["eslint-config-airbnb-base", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:15.0.0"],\
@@ -13014,10 +13014,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:7.14.0", {\
-          "packageLocation": "./.yarn/cache/c8-npm-7.14.0-dbb87a3021-ca44bbd200.zip/node_modules/c8/",\
+        ["npm:8.0.0", {\
+          "packageLocation": "./.yarn/cache/c8-npm-8.0.0-905b9370f4-9b107e412a.zip/node_modules/c8/",\
           "packageDependencies": [\
-            ["c8", "npm:7.14.0"],\
+            ["c8", "npm:8.0.0"],\
             ["@bcoe/v8-coverage", "npm:0.2.3"],\
             ["@istanbuljs/schema", "npm:0.1.3"],\
             ["find-up", "npm:5.0.0"],\
@@ -17628,7 +17628,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-macros", "npm:3.1.0"],\
             ["babel-plugin-named-exports-order", "npm:0.0.2"],\
             ["babel-plugin-polyfill-corejs3", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:0.8.1"],\
-            ["c8", "npm:7.14.0"],\
+            ["c8", "npm:8.0.0"],\
             ["core-js", "npm:3.31.0"],\
             ["eslint", "npm:8.13.0"],\
             ["eslint-config-airbnb-base", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:15.0.0"],\
