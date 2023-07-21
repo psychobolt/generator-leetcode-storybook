@@ -73,7 +73,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-named-exports-order", "npm:0.0.2"],\
             ["babel-plugin-polyfill-corejs3", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:0.8.3"],\
             ["c8", "npm:8.0.0"],\
-            ["core-js", "npm:3.31.0"],\
+            ["core-js", "npm:3.31.1"],\
             ["eslint", "npm:8.13.0"],\
             ["eslint-config-airbnb-base", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:15.0.0"],\
             ["eslint-plugin-flowtype", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:8.0.3"],\
@@ -14496,10 +14496,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:3.31.0", {\
-          "packageLocation": "./.yarn/cache/core-js-npm-3.31.0-6aa43450d7-f7cf9b3010.zip/node_modules/core-js/",\
+        ["npm:3.31.1", {\
+          "packageLocation": "./.yarn/cache/core-js-npm-3.31.1-7df9ac7f4f-14519213a6.zip/node_modules/core-js/",\
           "packageDependencies": [\
-            ["core-js", "npm:3.31.0"]\
+            ["core-js", "npm:3.31.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -17813,7 +17813,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-named-exports-order", "npm:0.0.2"],\
             ["babel-plugin-polyfill-corejs3", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:0.8.3"],\
             ["c8", "npm:8.0.0"],\
-            ["core-js", "npm:3.31.0"],\
+            ["core-js", "npm:3.31.1"],\
             ["eslint", "npm:8.13.0"],\
             ["eslint-config-airbnb-base", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:15.0.0"],\
             ["eslint-plugin-flowtype", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:8.0.3"],\
