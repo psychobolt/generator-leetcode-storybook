@@ -82,7 +82,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["espree", "npm:9.6.1"],\
             ["execa", "npm:7.2.0"],\
             ["flow-bin", "npm:0.175.1"],\
-            ["flow-typed", "npm:3.8.0"],\
+            ["flow-typed", "npm:3.9.0"],\
             ["glob", "npm:9.3.5"],\
             ["isbinaryfile", "npm:5.0.0"],\
             ["jest", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:29.6.2"],\
@@ -17426,10 +17426,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["flow-typed", [\
-        ["npm:3.8.0", {\
-          "packageLocation": "./.yarn/cache/flow-typed-npm-3.8.0-d3e308fc70-f3b9388843.zip/node_modules/flow-typed/",\
+        ["npm:3.9.0", {\
+          "packageLocation": "./.yarn/cache/flow-typed-npm-3.9.0-0e7c1d2ff7-ec410b9dc1.zip/node_modules/flow-typed/",\
           "packageDependencies": [\
-            ["flow-typed", "npm:3.8.0"],\
+            ["flow-typed", "npm:3.9.0"],\
             ["@octokit/rest", "npm:18.12.0"],\
             ["colors", "npm:1.4.0"],\
             ["flowgen", "npm:1.17.0"],\
@@ -17441,7 +17441,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-stream-zip", "npm:1.15.0"],\
             ["prettier", "npm:1.19.1"],\
             ["rimraf", "npm:3.0.2"],\
-            ["semver", "npm:7.3.2"],\
+            ["semver", "npm:7.5.4"],\
             ["table", "npm:6.8.0"],\
             ["which", "npm:2.0.2"],\
             ["yargs", "npm:15.4.1"]\
@@ -18010,7 +18010,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["espree", "npm:9.6.1"],\
             ["execa", "npm:7.2.0"],\
             ["flow-bin", "npm:0.175.1"],\
-            ["flow-typed", "npm:3.8.0"],\
+            ["flow-typed", "npm:3.9.0"],\
             ["glob", "npm:9.3.5"],\
             ["isbinaryfile", "npm:5.0.0"],\
             ["jest", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:29.6.2"],\
@@ -27708,13 +27708,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/semver-npm-7.0.0-218e8c00ca-272c11bf8d.zip/node_modules/semver/",\
           "packageDependencies": [\
             ["semver", "npm:7.0.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:7.3.2", {\
-          "packageLocation": "./.yarn/cache/semver-npm-7.3.2-161b023bbb-692f4900da.zip/node_modules/semver/",\
-          "packageDependencies": [\
-            ["semver", "npm:7.3.2"]\
           ],\
           "linkType": "HARD"\
         }],\
