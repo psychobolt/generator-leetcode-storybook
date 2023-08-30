@@ -57,7 +57,7 @@
     "@babel/plugin-transform-react-jsx": "7.22.5",
     "@babel/plugin-transform-shorthand-properties": "7.22.5",
     "@babel/plugin-transform-spread": "7.22.5",
-    "@babel/preset-env": "7.22.10",
+    "@babel/preset-env": "7.22.14",
     "@geometricpanda/storybook-addon-badges": "1.1.1",
     "@mdx-js/react": "1.6.22",
     "@storybook/addon-actions": "6.5.16",
