@@ -105,7 +105,7 @@
     "vsc-leetcode-cli": "2.8.1",
     "webpack": "5.88.2",
     "yeoman-environment": "3.19.3",
-    "yeoman-test": "6.3.0",
+    "yeoman-test": "7.4.0",
     "yo": "4.3.1"
   },
   "packageManager": "yarn@3.6.3",
