@@ -98,7 +98,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["require-from-string", "npm:2.0.2"],\
             ["rimraf", "npm:5.0.5"],\
             ["slash", "npm:5.1.0"],\
-            ["symlink-dir", "npm:5.2.0"],\
+            ["symlink-dir", "npm:5.2.1"],\
             ["to-absolute-glob", "https://github.com/psychobolt/to-absolute-glob.git#commit=8583eea2b8791b92050a7bee00db808c5438cad1"],\
             ["vsc-leetcode-cli", "npm:2.8.1"],\
             ["webpack", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.88.2"],\
@@ -18361,7 +18361,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["require-from-string", "npm:2.0.2"],\
             ["rimraf", "npm:5.0.5"],\
             ["slash", "npm:5.1.0"],\
-            ["symlink-dir", "npm:5.2.0"],\
+            ["symlink-dir", "npm:5.2.1"],\
             ["to-absolute-glob", "https://github.com/psychobolt/to-absolute-glob.git#commit=8583eea2b8791b92050a7bee00db808c5438cad1"],\
             ["vsc-leetcode-cli", "npm:2.8.1"],\
             ["webpack", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:5.88.2"],\
@@ -27538,10 +27538,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["rename-overwrite", [\
-        ["npm:4.0.3", {\
-          "packageLocation": "./.yarn/cache/rename-overwrite-npm-4.0.3-52b95cc531-ac225a1b2e.zip/node_modules/rename-overwrite/",\
+        ["npm:5.0.0", {\
+          "packageLocation": "./.yarn/cache/rename-overwrite-npm-5.0.0-fa24e76e96-eaac7b3630.zip/node_modules/rename-overwrite/",\
           "packageDependencies": [\
-            ["rename-overwrite", "npm:4.0.3"],\
+            ["rename-overwrite", "npm:5.0.0"],\
             ["@zkochan/rimraf", "npm:2.1.2"],\
             ["fs-extra", "npm:10.1.0"]\
           ],\
@@ -29585,12 +29585,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["symlink-dir", [\
-        ["npm:5.2.0", {\
-          "packageLocation": "./.yarn/cache/symlink-dir-npm-5.2.0-7dbb615bd0-b79419e16a.zip/node_modules/symlink-dir/",\
+        ["npm:5.2.1", {\
+          "packageLocation": "./.yarn/cache/symlink-dir-npm-5.2.1-c5cccaf678-6d1d15014b.zip/node_modules/symlink-dir/",\
           "packageDependencies": [\
-            ["symlink-dir", "npm:5.2.0"],\
+            ["symlink-dir", "npm:5.2.1"],\
             ["better-path-resolve", "npm:1.0.0"],\
-            ["rename-overwrite", "npm:4.0.3"]\
+            ["rename-overwrite", "npm:5.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
