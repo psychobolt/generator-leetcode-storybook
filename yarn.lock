@@ -10581,10 +10581,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.32.2":
-  version: 3.32.2
-  resolution: "core-js@npm:3.32.2"
-  checksum: d6fac7e8eb054eefc211c76cd0a0ff07447a917122757d085f469f046ec888d122409c7db1a9601c3eb5fa767608ed380bcd219eace02bdf973da155680edeec
+"core-js@npm:3.36.0":
+  version: 3.36.0
+  resolution: "core-js@npm:3.36.0"
+  checksum: 48c807d5055ad0424f52d13583e96ddca2efcdc4e3cd9c479d60f269c8fe225191cd4e26a4593f43f7ef6dba08d161091147ecf8ae0300c15bc648a4f555217b
   languageName: node
   linkType: hard
 
@@ -13573,7 +13573,7 @@ __metadata:
     babel-plugin-named-exports-order: 0.0.2
     babel-plugin-polyfill-corejs3: 0.9.0
     c8: 8.0.1
-    core-js: 3.32.2
+    core-js: 3.36.0
     eslint: 8.13.0
     eslint-config-airbnb-base: 15.0.0
     eslint-plugin-flowtype: 8.0.3
