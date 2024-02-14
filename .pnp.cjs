@@ -84,7 +84,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["flow-bin", "npm:0.175.1"],\
             ["flow-typed", "npm:3.9.0"],\
             ["glob", "npm:9.3.5"],\
-            ["isbinaryfile", "npm:5.0.0"],\
+            ["isbinaryfile", "npm:5.0.2"],\
             ["jest", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:29.7.0"],\
             ["jest-cli", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:29.7.0"],\
             ["jest-light-runner", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:0.6.0"],\
@@ -18469,7 +18469,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["flow-bin", "npm:0.175.1"],\
             ["flow-typed", "npm:3.9.0"],\
             ["glob", "npm:9.3.5"],\
-            ["isbinaryfile", "npm:5.0.0"],\
+            ["isbinaryfile", "npm:5.0.2"],\
             ["jest", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:29.7.0"],\
             ["jest-cli", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:29.7.0"],\
             ["jest-light-runner", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:0.6.0"],\
@@ -21041,10 +21041,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:5.0.0", {\
-          "packageLocation": "./.yarn/cache/isbinaryfile-npm-5.0.0-e98524e7a5-25cc27388d.zip/node_modules/isbinaryfile/",\
+        ["npm:5.0.2", {\
+          "packageLocation": "./.yarn/cache/isbinaryfile-npm-5.0.2-3cb4869f50-5e3e9d31b0.zip/node_modules/isbinaryfile/",\
           "packageDependencies": [\
-            ["isbinaryfile", "npm:5.0.0"]\
+            ["isbinaryfile", "npm:5.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
