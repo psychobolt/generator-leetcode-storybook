@@ -66,7 +66,7 @@ jobs:
         shell: bash
       - run: yarn build-storybook
         shell: bash
-      - uses: chromaui/action@v1
+      - uses: chromaui/action@v10
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           storybookBuildDir: storybook-static
