@@ -103,7 +103,7 @@
     "rimraf": "5.0.5",
     "symlink-dir": "5.2.1",
     "vsc-leetcode-cli": "2.8.1",
-    "webpack": "5.90.1",
+    "webpack": "5.90.2",
     "yeoman-environment": "3.19.3",
     "yeoman-test": "6.3.0",
     "yo": "4.3.1"
