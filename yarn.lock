@@ -13762,7 +13762,7 @@ __metadata:
     jest-specific-snapshot: 8.0.0
     json5: 2.2.3
     lodash: 4.17.21
-    markdown-to-jsx: 7.3.2
+    markdown-to-jsx: 7.4.1
     react: 18.2.0
     react-dom: 18.2.0
     react-syntax-highlighter: 15.5.0
@@ -18191,12 +18191,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-to-jsx@npm:7.3.2":
-  version: 7.3.2
-  resolution: "markdown-to-jsx@npm:7.3.2"
+"markdown-to-jsx@npm:7.4.1":
+  version: 7.4.1
+  resolution: "markdown-to-jsx@npm:7.4.1"
   peerDependencies:
     react: ">= 0.14.0"
-  checksum: 8885c6343b71570b0a7ec16cd85a49b853a830234790ee7430e2517ea5d8d361ff138bd52147f650790f3e7b3a28a15c755fc16f8856dd01ddf09a6161782e06
+  checksum: 2888cb2389cb810ab35454a59d0623474a60a78e28f281ae0081f87053f6c59b033232a2cd269cc383a5edcaa1eab8ca4b3cf639fe4e1aa3fb418648d14bcc7d
   languageName: node
   linkType: hard
 
