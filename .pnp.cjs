@@ -72,7 +72,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-macros", "npm:3.1.0"],\
             ["babel-plugin-named-exports-order", "npm:0.0.2"],\
             ["babel-plugin-polyfill-corejs3", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:0.9.0"],\
-            ["c8", "npm:8.0.1"],\
+            ["c8", "npm:9.1.0"],\
             ["core-js", "npm:3.36.0"],\
             ["eslint", "npm:8.13.0"],\
             ["eslint-config-airbnb-base", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:15.0.0"],\
@@ -13587,18 +13587,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:8.0.1", {\
-          "packageLocation": "./.yarn/cache/c8-npm-8.0.1-6462c8130b-2c47531d21.zip/node_modules/c8/",\
+        ["npm:9.1.0", {\
+          "packageLocation": "./.yarn/cache/c8-npm-9.1.0-92c3d37f46-c5249bf9c3.zip/node_modules/c8/",\
           "packageDependencies": [\
-            ["c8", "npm:8.0.1"],\
+            ["c8", "npm:9.1.0"],\
             ["@bcoe/v8-coverage", "npm:0.2.3"],\
             ["@istanbuljs/schema", "npm:0.1.3"],\
             ["find-up", "npm:5.0.0"],\
-            ["foreground-child", "npm:2.0.0"],\
+            ["foreground-child", "npm:3.1.1"],\
             ["istanbul-lib-coverage", "npm:3.2.0"],\
             ["istanbul-lib-report", "npm:3.0.1"],\
             ["istanbul-reports", "npm:3.1.6"],\
-            ["rimraf", "npm:3.0.2"],\
             ["test-exclude", "npm:6.0.0"],\
             ["v8-to-istanbul", "npm:9.0.0"],\
             ["yargs", "npm:17.7.2"],\
@@ -18433,7 +18432,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-macros", "npm:3.1.0"],\
             ["babel-plugin-named-exports-order", "npm:0.0.2"],\
             ["babel-plugin-polyfill-corejs3", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:0.9.0"],\
-            ["c8", "npm:8.0.1"],\
+            ["c8", "npm:9.1.0"],\
             ["core-js", "npm:3.36.0"],\
             ["eslint", "npm:8.13.0"],\
             ["eslint-config-airbnb-base", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:15.0.0"],\
