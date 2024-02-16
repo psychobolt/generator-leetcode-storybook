@@ -79,7 +79,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-flowtype", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:8.0.3"],\
             ["eslint-plugin-import", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:2.29.1"],\
             ["eslint-plugin-jest", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:27.8.0"],\
-            ["espree", "npm:9.6.1"],\
+            ["espree", "npm:10.0.1"],\
             ["execa", "npm:8.0.1"],\
             ["flow-bin", "npm:0.175.1"],\
             ["flow-typed", "npm:3.9.0"],\
@@ -11492,13 +11492,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["acorn", "npm:8.7.1"]\
           ],\
           "linkType": "HARD"\
-        }],\
-        ["npm:8.9.0", {\
-          "packageLocation": "./.yarn/cache/acorn-npm-8.9.0-4ebbf0f638-25dfb94952.zip/node_modules/acorn/",\
-          "packageDependencies": [\
-            ["acorn", "npm:8.9.0"]\
-          ],\
-          "linkType": "HARD"\
         }]\
       ]],\
       ["acorn-globals", [\
@@ -11574,12 +11567,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["virtual:a50722a5a9326b6a5f12350c494c4db3aa0f4caeac45e3e9e5fe071da20014ecfe738fe2ebe2c9c98abae81a4ea86b42f56d776b3bd5ec37f9ad3670c242b242#npm:5.3.2", {\
-          "packageLocation": "./.yarn/__virtual__/acorn-jsx-virtual-834321b202/0/cache/acorn-jsx-npm-5.3.2-d7594599ea-c3d3b2a89c.zip/node_modules/acorn-jsx/",\
+        ["virtual:1d04a36678c496acf3d389e17ed9bd4f584d68b3ba562e3fbf3ac14301605004ad9734e13c87ed5ad435a404951381b0d69ee55b4d70e92f6b9a42c24ce39262#npm:5.3.2", {\
+          "packageLocation": "./.yarn/__virtual__/acorn-jsx-virtual-cf5402f670/0/cache/acorn-jsx-npm-5.3.2-d7594599ea-c3d3b2a89c.zip/node_modules/acorn-jsx/",\
           "packageDependencies": [\
-            ["acorn-jsx", "virtual:a50722a5a9326b6a5f12350c494c4db3aa0f4caeac45e3e9e5fe071da20014ecfe738fe2ebe2c9c98abae81a4ea86b42f56d776b3bd5ec37f9ad3670c242b242#npm:5.3.2"],\
+            ["acorn-jsx", "virtual:1d04a36678c496acf3d389e17ed9bd4f584d68b3ba562e3fbf3ac14301605004ad9734e13c87ed5ad435a404951381b0d69ee55b4d70e92f6b9a42c24ce39262#npm:5.3.2"],\
             ["@types/acorn", null],\
-            ["acorn", "npm:8.9.0"]\
+            ["acorn", "npm:8.11.3"]\
           ],\
           "packagePeers": [\
             "@types/acorn",\
@@ -17031,15 +17024,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:3.4.1", {\
-          "packageLocation": "./.yarn/cache/eslint-visitor-keys-npm-3.4.1-a5d0a58208-f05121d868.zip/node_modules/eslint-visitor-keys/",\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/eslint-visitor-keys-npm-4.0.0-9098eefd77-5c09f89cf2.zip/node_modules/eslint-visitor-keys/",\
           "packageDependencies": [\
-            ["eslint-visitor-keys", "npm:3.4.1"]\
+            ["eslint-visitor-keys", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["espree", [\
+        ["npm:10.0.1", {\
+          "packageLocation": "./.yarn/cache/espree-npm-10.0.1-1d04a36678-62c9242a84.zip/node_modules/espree/",\
+          "packageDependencies": [\
+            ["espree", "npm:10.0.1"],\
+            ["acorn", "npm:8.11.3"],\
+            ["acorn-jsx", "virtual:1d04a36678c496acf3d389e17ed9bd4f584d68b3ba562e3fbf3ac14301605004ad9734e13c87ed5ad435a404951381b0d69ee55b4d70e92f6b9a42c24ce39262#npm:5.3.2"],\
+            ["eslint-visitor-keys", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:9.3.1", {\
           "packageLocation": "./.yarn/cache/espree-npm-9.3.1-0c9e34c3fa-d7161db30b.zip/node_modules/espree/",\
           "packageDependencies": [\
@@ -17047,16 +17050,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["acorn", "npm:8.7.0"],\
             ["acorn-jsx", "virtual:0c9e34c3fa9d80d85520d8d206a6d431b6acc46e375bc5793862c9de34e0711c329e0aaf529612a1d5d8e52101498a40626cf537f586fa00088be1ad22c166df#npm:5.3.2"],\
             ["eslint-visitor-keys", "npm:3.3.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:9.6.1", {\
-          "packageLocation": "./.yarn/cache/espree-npm-9.6.1-a50722a5a9-eb8c149c7a.zip/node_modules/espree/",\
-          "packageDependencies": [\
-            ["espree", "npm:9.6.1"],\
-            ["acorn", "npm:8.9.0"],\
-            ["acorn-jsx", "virtual:a50722a5a9326b6a5f12350c494c4db3aa0f4caeac45e3e9e5fe071da20014ecfe738fe2ebe2c9c98abae81a4ea86b42f56d776b3bd5ec37f9ad3670c242b242#npm:5.3.2"],\
-            ["eslint-visitor-keys", "npm:3.4.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -18439,7 +18432,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-flowtype", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:8.0.3"],\
             ["eslint-plugin-import", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:2.29.1"],\
             ["eslint-plugin-jest", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:27.8.0"],\
-            ["espree", "npm:9.6.1"],\
+            ["espree", "npm:10.0.1"],\
             ["execa", "npm:8.0.1"],\
             ["flow-bin", "npm:0.175.1"],\
             ["flow-typed", "npm:3.9.0"],\
