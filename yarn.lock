@@ -3842,23 +3842,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@geometricpanda/storybook-addon-badges@npm:1.1.1":
-  version: 1.1.1
-  resolution: "@geometricpanda/storybook-addon-badges@npm:1.1.1"
+"@geometricpanda/storybook-addon-badges@npm:2.0.5":
+  version: 2.0.5
+  resolution: "@geometricpanda/storybook-addon-badges@npm:2.0.5"
   peerDependencies:
-    "@storybook/addons": ^6.5.8
-    "@storybook/api": ^6.5.8
-    "@storybook/components": ^6.5.8
-    "@storybook/core-events": ^6.5.8
-    "@storybook/theming": ^6.5.8
-    react: ^16.8.0 || ^17.0.0
+    "@storybook/blocks": ^8.3.0
+    "@storybook/components": ^8.3.0
+    "@storybook/core-events": ^8.3.0
+    "@storybook/manager-api": ^8.3.0
+    "@storybook/preview-api": ^8.3.0
+    "@storybook/theming": ^8.3.0
+    "@storybook/types": ^8.3.0
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
   peerDependenciesMeta:
     react:
       optional: true
     react-dom:
       optional: true
-  checksum: d60a2368213019392355b980d635f28a9e4d21ab8a40a350048429a4967a42ba810a7a152ddb62151c48035968e1ca97314fd00d9327f6d671a5fc3f686e460b
+  checksum: 6e91e3f7bc7f07b77dd83e007cbca8ab4face6d7e0349a3db3937a1dccdb86c7b79fb7903e468f40b1a85ad2297b1639fc7ae929c241d58c3fd2094dede2f401
   languageName: node
   linkType: hard
 
@@ -13769,7 +13771,7 @@ __metadata:
     "@babel/plugin-transform-shorthand-properties": 7.24.1
     "@babel/plugin-transform-spread": 7.24.1
     "@babel/preset-env": 7.24.5
-    "@geometricpanda/storybook-addon-badges": 1.1.1
+    "@geometricpanda/storybook-addon-badges": 2.0.5
     "@mdx-js/react": 1.6.22
     "@storybook/addon-actions": 6.5.16
     "@storybook/addon-docs": 6.5.16
