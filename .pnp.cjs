@@ -50,7 +50,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/plugin-transform-shorthand-properties", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:7.24.1"],\
             ["@babel/plugin-transform-spread", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:7.24.1"],\
             ["@babel/preset-env", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:7.24.5"],\
-            ["@geometricpanda/storybook-addon-badges", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:1.1.1"],\
+            ["@geometricpanda/storybook-addon-badges", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:2.0.5"],\
             ["@mdx-js/react", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:1.6.22"],\
             ["@storybook/addon-actions", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:6.5.16"],\
             ["@storybook/addon-docs", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:6.5.16"],\
@@ -6499,45 +6499,53 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@geometricpanda/storybook-addon-badges", [\
-        ["npm:1.1.1", {\
-          "packageLocation": "./.yarn/cache/@geometricpanda-storybook-addon-badges-npm-1.1.1-8381087790-d60a236821.zip/node_modules/@geometricpanda/storybook-addon-badges/",\
+        ["npm:2.0.5", {\
+          "packageLocation": "./.yarn/cache/@geometricpanda-storybook-addon-badges-npm-2.0.5-af452a101d-6e91e3f7bc.zip/node_modules/@geometricpanda/storybook-addon-badges/",\
           "packageDependencies": [\
-            ["@geometricpanda/storybook-addon-badges", "npm:1.1.1"]\
+            ["@geometricpanda/storybook-addon-badges", "npm:2.0.5"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:1.1.1", {\
-          "packageLocation": "./.yarn/__virtual__/@geometricpanda-storybook-addon-badges-virtual-5310570dfa/0/cache/@geometricpanda-storybook-addon-badges-npm-1.1.1-8381087790-d60a236821.zip/node_modules/@geometricpanda/storybook-addon-badges/",\
+        ["virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:2.0.5", {\
+          "packageLocation": "./.yarn/__virtual__/@geometricpanda-storybook-addon-badges-virtual-c11c7c0883/0/cache/@geometricpanda-storybook-addon-badges-npm-2.0.5-af452a101d-6e91e3f7bc.zip/node_modules/@geometricpanda/storybook-addon-badges/",\
           "packageDependencies": [\
-            ["@geometricpanda/storybook-addon-badges", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:1.1.1"],\
-            ["@storybook/addons", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:6.5.16"],\
-            ["@storybook/api", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:6.5.16"],\
+            ["@geometricpanda/storybook-addon-badges", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:2.0.5"],\
+            ["@storybook/blocks", null],\
             ["@storybook/components", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:6.5.16"],\
             ["@storybook/core-events", null],\
+            ["@storybook/manager-api", null],\
+            ["@storybook/preview-api", null],\
             ["@storybook/theming", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:6.5.16"],\
+            ["@storybook/types", null],\
             ["@types/react", null],\
             ["@types/react-dom", null],\
-            ["@types/storybook__addons", null],\
-            ["@types/storybook__api", null],\
+            ["@types/storybook__blocks", null],\
             ["@types/storybook__components", null],\
             ["@types/storybook__core-events", null],\
+            ["@types/storybook__manager-api", null],\
+            ["@types/storybook__preview-api", null],\
             ["@types/storybook__theming", null],\
+            ["@types/storybook__types", null],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:18.2.0"]\
           ],\
           "packagePeers": [\
-            "@storybook/addons",\
-            "@storybook/api",\
+            "@storybook/blocks",\
             "@storybook/components",\
             "@storybook/core-events",\
+            "@storybook/manager-api",\
+            "@storybook/preview-api",\
             "@storybook/theming",\
+            "@storybook/types",\
             "@types/react-dom",\
             "@types/react",\
-            "@types/storybook__addons",\
-            "@types/storybook__api",\
+            "@types/storybook__blocks",\
             "@types/storybook__components",\
             "@types/storybook__core-events",\
+            "@types/storybook__manager-api",\
+            "@types/storybook__preview-api",\
             "@types/storybook__theming",\
+            "@types/storybook__types",\
             "react-dom",\
             "react"\
           ],\
@@ -18474,7 +18482,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/plugin-transform-shorthand-properties", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:7.24.1"],\
             ["@babel/plugin-transform-spread", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:7.24.1"],\
             ["@babel/preset-env", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:7.24.5"],\
-            ["@geometricpanda/storybook-addon-badges", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:1.1.1"],\
+            ["@geometricpanda/storybook-addon-badges", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:2.0.5"],\
             ["@mdx-js/react", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:1.6.22"],\
             ["@storybook/addon-actions", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:6.5.16"],\
             ["@storybook/addon-docs", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:6.5.16"],\
