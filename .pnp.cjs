@@ -96,7 +96,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:18.2.0"],\
             ["react-syntax-highlighter", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:15.5.0"],\
             ["require-from-string", "npm:2.0.2"],\
-            ["rimraf", "npm:5.0.5"],\
+            ["rimraf", "npm:5.0.10"],\
             ["slash", "npm:5.1.0"],\
             ["symlink-dir", "npm:5.2.1"],\
             ["to-absolute-glob", "https://github.com/psychobolt/to-absolute-glob.git#commit=8583eea2b8791b92050a7bee00db808c5438cad1"],\
@@ -18520,7 +18520,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:18.2.0"],\
             ["react-syntax-highlighter", "virtual:c35a83e632683881f78b0506ebab48dc761569dae9016d08564886c7431e9b6b9446699445ddd9862d67fcda44dd6a76a1cf95ad0386a10e5d38a1e8476c762a#npm:15.5.0"],\
             ["require-from-string", "npm:2.0.2"],\
-            ["rimraf", "npm:5.0.5"],\
+            ["rimraf", "npm:5.0.10"],\
             ["slash", "npm:5.1.0"],\
             ["symlink-dir", "npm:5.2.1"],\
             ["to-absolute-glob", "https://github.com/psychobolt/to-absolute-glob.git#commit=8583eea2b8791b92050a7bee00db808c5438cad1"],\
@@ -28127,10 +28127,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:5.0.5", {\
-          "packageLocation": "./.yarn/cache/rimraf-npm-5.0.5-19228633fd-d66eef829b.zip/node_modules/rimraf/",\
+        ["npm:5.0.10", {\
+          "packageLocation": "./.yarn/cache/rimraf-npm-5.0.10-d0c6647697-50e27388dd.zip/node_modules/rimraf/",\
           "packageDependencies": [\
-            ["rimraf", "npm:5.0.5"],\
+            ["rimraf", "npm:5.0.10"],\
             ["glob", "npm:10.3.10"]\
           ],\
           "linkType": "HARD"\
