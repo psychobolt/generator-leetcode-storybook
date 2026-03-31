@@ -13809,7 +13809,7 @@ __metadata:
     jest-light-runner: 0.6.0
     jest-specific-snapshot: 8.0.0
     json5: 2.2.3
-    lodash: 4.17.21
+    lodash: 4.18.0
     markdown-to-jsx: 7.4.7
     react: 18.2.0
     react-dom: 18.2.0
@@ -17909,10 +17909,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:*, lodash@npm:4.17.21, lodash@npm:^4.1.0, lodash@npm:^4.17.10, lodash@npm:^4.17.11, lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20, lodash@npm:^4.17.21":
+"lodash@npm:*, lodash@npm:^4.1.0, lodash@npm:^4.17.10, lodash@npm:^4.17.11, lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20, lodash@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
+  languageName: node
+  linkType: hard
+
+"lodash@npm:4.18.0":
+  version: 4.18.0
+  resolution: "lodash@npm:4.18.0"
+  checksum: 220e1b40f80425cbde3fcdd0915c0ef87e29cbce5fe9a6c82ad80a1d50cfab713eed7dc97a2f7697b11760796ec45cd1d9daf9767a9bee26da5502af487c9f45
   languageName: node
   linkType: hard
 
